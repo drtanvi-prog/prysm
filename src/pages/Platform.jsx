@@ -1,6 +1,10 @@
 import { HowItWorks } from '../components/HowItWorks'
 import { Features } from '../components/Features'
+import { PlatformInAction } from '../components/platform/PlatformInAction'
+import { PlatformPipeline } from '../components/platform/PlatformPipeline'
+import { PlatformClinicians } from '../components/platform/PlatformClinicians'
 import { PlatformIntegrations } from '../components/platform/PlatformIntegrations'
+import { PlatformSubNav } from '../components/platform/PlatformSubNav'
 import { CTA } from '../components/CTA'
 
 export const Platform = () => {
@@ -50,9 +54,13 @@ export const Platform = () => {
         </div>
       </div>
 
-      <HowItWorks />
-      <Features />
-      <PlatformIntegrations />
+      <PlatformSubNav />
+      <div id="how-it-works"><HowItWorks /></div>
+      <div id="features"><Features /></div>
+      <div id="in-action"><PlatformInAction /></div>
+      <div id="pipeline"><PlatformPipeline /></div>
+      <div id="clinicians"><PlatformClinicians /></div>
+      <div id="integrations"><PlatformIntegrations /></div>
       <CTA />
     </div>
   )

@@ -4,43 +4,43 @@ export const Contact = () => {
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-2">
         
         {/* Left Side - Info */}
-        <div className="bg-slate-50 p-10 sm:p-16 lg:p-24 flex flex-col justify-center border-r border-slate-200">
+        <div className="bg-indigo-950 p-10 sm:p-16 lg:p-24 flex flex-col justify-center">
           <div className="max-w-xl mx-auto w-full">
-                <div className="text-sm font-semibold tracking-wide text-blue-600 uppercase mb-4">The Next Step</div>
-                <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-indigo-950">See what's possible.</h1>
-                <p className="text-slate-500 text-lg mb-12 leading-relaxed">
+                <div className="text-sm font-semibold tracking-wide text-blue-400 uppercase mb-4">The Next Step</div>
+                <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-white">See what's possible.</h1>
+                <p className="text-indigo-100/80 text-lg mb-12 leading-relaxed">
                   We would welcome the opportunity to join you in a conversation about your grateful patient program - and to explore whether Prysm could be the right fit for where you want to take it.
                 </p>
                 
                 <div className="space-y-8 mb-16">
                   <div className="flex items-start gap-4">
-                    <div className="text-sm font-bold uppercase tracking-wider text-slate-400 mt-1 w-16">Step 1</div>
+                    <div className="text-sm font-bold uppercase tracking-wider text-indigo-300 mt-1 w-16">Step 1</div>
                     <div>
-                      <h4 className="font-bold text-indigo-950 mb-2">Program Review</h4>
-                      <p className="text-slate-500 text-sm">We get to know your grateful patient program and the goals behind it.</p>
+                      <h4 className="font-bold text-white mb-2">Program Review</h4>
+                      <p className="text-indigo-100/70 text-sm">We get to know your grateful patient program and the goals behind it.</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-4">
-                    <div className="text-sm font-bold uppercase tracking-wider text-slate-400 mt-1 w-16">Step 2</div>
+                    <div className="text-sm font-bold uppercase tracking-wider text-indigo-300 mt-1 w-16">Step 2</div>
                     <div>
-                      <h4 className="font-bold text-indigo-950 mb-2">Opportunity View</h4>
-                      <p className="text-slate-500 text-sm">A clear read on where the most meaningful growth sits, grounded in your own data.</p>
+                      <h4 className="font-bold text-white mb-2">Opportunity View</h4>
+                      <p className="text-indigo-100/70 text-sm">A clear read on where the most meaningful growth sits, grounded in your own data.</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-4">
-                    <div className="text-sm font-bold uppercase tracking-wider text-blue-600 mt-1 w-16">Step 3</div>
+                    <div className="text-sm font-bold uppercase tracking-wider text-blue-400 mt-1 w-16">Step 3</div>
                     <div>
-                      <h4 className="font-bold text-indigo-950 mb-2">Where Prysm Fits</h4>
-                      <p className="text-slate-500 text-sm">An honest take on whether Prysm is the right next step - or whether it isn't.</p>
+                      <h4 className="font-bold text-white mb-2">Where Prysm Fits</h4>
+                      <p className="text-indigo-100/70 text-sm">An honest take on whether Prysm is the right next step - or whether it isn't.</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="pt-8 border-t border-slate-200">
-                  <p className="font-bold text-indigo-950 mb-3">Start the conversation.</p>
-                  <a href="mailto:sales@actionableinsightai.com" className="text-blue-600 hover:text-blue-700 font-medium transition-colors flex items-center gap-2">
+                <div className="pt-8 border-t border-indigo-900/50">
+                  <p className="font-bold text-white mb-3">Start the conversation.</p>
+                  <a href="mailto:sales@actionableinsightai.com" className="text-blue-400 hover:text-blue-300 font-medium transition-colors flex items-center gap-2">
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>

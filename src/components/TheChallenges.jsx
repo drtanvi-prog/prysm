@@ -35,10 +35,10 @@ export const TheChallenges = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {challenges.map((challenge, index) => (
-            <div key={index} className="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col h-full">
-              <div className="w-10 h-10 rounded-lg bg-indigo-900 text-white flex items-center justify-center font-bold text-lg mb-6 shadow-sm">
+            <div key={index} className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+              <div className="w-10 h-10 rounded-xl bg-slate-50 text-indigo-950 border border-slate-200 flex items-center justify-center font-bold text-sm mb-6">
                 {index + 1}
               </div>
               <h3 className="text-xl font-bold text-indigo-950 mb-3">{challenge.title}</h3>
@@ -46,9 +46,9 @@ export const TheChallenges = () => {
             </div>
           ))}
           
-          <div className="bg-white p-8 rounded-2xl border-2 border-indigo-900 shadow-sm flex flex-col h-full justify-center items-center text-center">
-            <h3 className="text-2xl font-bold text-indigo-950 mb-2">The Cost of Inaction</h3>
-            <p className="text-slate-500 text-sm">Every day these challenges persist is another missed opportunity to connect with a grateful patient.</p>
+          <div className="bg-indigo-950 p-8 rounded-2xl border border-indigo-900 shadow-sm flex flex-col h-full justify-center items-center text-center">
+            <h3 className="text-xl font-bold text-white mb-2">The Cost of Inaction</h3>
+            <p className="text-indigo-200/80 text-sm leading-relaxed">Every day these challenges persist is another missed opportunity to connect with a grateful patient.</p>
           </div>
         </div>
       </div>

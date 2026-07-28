@@ -1,21 +1,15 @@
 import { CTA } from '../components/CTA'
+import { PageHeader } from '../components/PageHeader'
 
 export const Solutions = () => {
   return (
     <div className="bg-white">
       
-      {/* Header Section */}
-      <section className="pt-32 pb-24 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="text-sm font-semibold tracking-wide text-blue-600 uppercase mb-4">Built for the team</div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-indigo-950 mb-6">
-            Four roles. One unified reality.
-          </h1>
-          <p className="text-xl text-slate-500 max-w-3xl mx-auto">
-            Every user sees the same patient record, filtered to show exactly the data their role needs to execute the next best action.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        label="Built for the team"
+        title="Four roles. One unified reality."
+        subtitle="Every user sees the same patient record, filtered to show exactly the data their role needs to execute the next best action."
+      />
 
       {/* Solutions Grid */}
       <section className="py-32">

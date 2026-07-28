@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Logo } from './utils/Icons'
 
 export const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+    const location = useLocation()
 
     const navLinks = [
         { title: "Platform", href: "/platform" },
@@ -25,16 +26,20 @@ export const Header = () => {
 
                 {/* Desktop Navigation */}
                 <ul className="hidden md:flex gap-8">
-                    {navLinks.map((link) => (
+                    {navLinks.map((link) => {
+                        const isActive = location.pathname.startsWith(link.href)
+                        return (
                         <li key={link.title}>
                             <Link 
                                 to={link.href} 
-                                className="text-sm font-medium text-slate-600 hover:text-indigo-950 transition-colors"
+                                className={`text-sm font-medium transition-colors ${
+                                    isActive ? "text-blue-600" : "text-slate-600 hover:text-indigo-950"
+                                }`}
                             >
                                 {link.title}
                             </Link>
                         </li>
-                    ))}
+                    )})}
                 </ul>
 
                 {/* Right Side Actions */}
@@ -68,16 +73,20 @@ export const Header = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-white border-b border-slate-200">
                     <div className="px-4 pt-2 pb-6 space-y-2 shadow-lg">
-                        {navLinks.map((link) => (
+                        {navLinks.map((link) => {
+                            const isActive = location.pathname.startsWith(link.href)
+                            return (
                             <Link 
                                 key={link.title}
                                 to={link.href} 
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-950 hover:bg-slate-50 transition-colors"
+                                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                                    isActive ? "text-blue-700 bg-blue-50" : "text-slate-700 hover:text-indigo-950 hover:bg-slate-50"
+                                }`}
                             >
                                 {link.title}
                             </Link>
-                        ))}
+                        )})}
                         <div className="pt-4 pb-2 px-3">
                             <Link 
                                 to="/contact" 

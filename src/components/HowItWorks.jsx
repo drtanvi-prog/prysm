@@ -24,7 +24,7 @@ export const HowItWorks = () => {
           <div className="absolute top-6 left-[10%] w-[80%] h-0.5 bg-indigo-200 -translate-y-1/2 z-0"></div>
           
           <div className="flex justify-between relative z-10">
-            {steps.map((step, i) => (
+            {steps.map((step, i) => ( 
               <div key={i} className="flex flex-col items-center w-1/5">
                 <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white mb-4 shadow-lg">
                   {i + 1}
