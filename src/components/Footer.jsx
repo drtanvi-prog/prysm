@@ -1,4 +1,5 @@
 import { Logo } from '../utils/Icons'
+import { Link } from 'react-router-dom'
 
 export const Footer = () => {
   return (
@@ -9,6 +10,8 @@ export const Footer = () => {
         </div>
         
         <div className="text-sm text-slate-500 flex flex-wrap gap-6 justify-center">
+          <Link to="/results" className="hover:text-indigo-950 transition-colors">Results & Case Studies</Link>
+          <Link to="/security" className="hover:text-indigo-950 transition-colors">Security & Compliance</Link>
           <a href="/privacy" className="hover:text-indigo-950 transition-colors">Privacy Policy</a>
           <a href="/terms" className="hover:text-indigo-950 transition-colors">Terms of Service</a>
           <span>© {new Date().getFullYear()} Actionable Insight. All rights reserved.</span>

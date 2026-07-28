@@ -61,15 +61,14 @@ export const HowItWorks = () => {
             <h4 className="text-xl font-bold mb-3">Donor CRMs</h4>
             <p className="text-indigo-300 text-sm leading-relaxed">hold the data - but never report results back.</p>
           </div>
-          <div className="bg-blue-600 p-8 rounded-2xl flex items-center shadow-xl">
+          <div className="bg-indigo-900 border border-indigo-800 p-8 rounded-2xl flex items-center shadow-xl">
             <h4 className="text-2xl font-bold text-white">Only Prysm does both.</h4>
           </div>
         </div>
 
       </div>
       
-      {/* Glow Effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600 rounded-full blur-[150px] opacity-20 pointer-events-none"></div>
+      
     </section>
   )
 }

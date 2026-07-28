@@ -8,7 +8,7 @@ export const TheOpportunity = () => {
           <div>
             <div className="text-sm font-semibold tracking-wide text-blue-600 uppercase mb-3">The Opportunity</div>
             <h2 className="text-3xl sm:text-4xl font-bold text-indigo-950 mb-6">The Great Wealth Transfer</h2>
-            <div className="text-7xl font-extrabold text-indigo-950 tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-950 to-blue-600">
+            <div className="text-7xl font-extrabold text-blue-600 tracking-tighter mb-6">
               $124T
             </div>
             <p className="text-lg text-slate-600 mb-6">

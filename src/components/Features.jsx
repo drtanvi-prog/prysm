@@ -25,20 +25,20 @@ export const Features = () => {
 
         {/* Value Props Row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          <div className="bg-indigo-600 text-white p-8 rounded-2xl shadow-sm">
-            <div className="text-xs font-bold tracking-wider text-indigo-200 uppercase mb-2">For the team</div>
-            <h3 className="text-2xl font-bold mb-4">Insight</h3>
-            <p className="text-indigo-100 text-sm leading-relaxed">Shared visibility for everyone in the program - from the development officer making calls to the Chief Development Officer briefing the board.</p>
+          <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-2">For the team</div>
+            <h3 className="text-2xl font-bold mb-4 text-indigo-950">Insight</h3>
+            <p className="text-slate-500 text-sm leading-relaxed">Shared visibility for everyone in the program - from the development officer making calls to the Chief Development Officer briefing the board.</p>
           </div>
-          <div className="bg-blue-600 text-white p-8 rounded-2xl shadow-sm">
-            <div className="text-xs font-bold tracking-wider text-blue-200 uppercase mb-2">For the day's work</div>
-            <h3 className="text-2xl font-bold mb-4">Efficiency</h3>
-            <p className="text-blue-100 text-sm leading-relaxed">Time-consuming work - list-building, screening, call logging, hand-offs - is handled in the background, so fundraisers can focus on donor relationships.</p>
+          <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-2">For the day's work</div>
+            <h3 className="text-2xl font-bold mb-4 text-indigo-950">Efficiency</h3>
+            <p className="text-slate-500 text-sm leading-relaxed">Time-consuming work - list-building, screening, call logging, hand-offs - is handled in the background, so fundraisers can focus on donor relationships.</p>
           </div>
-          <div className="bg-indigo-950 text-white p-8 rounded-2xl shadow-sm">
-            <div className="text-xs font-bold tracking-wider text-indigo-300 uppercase mb-2">For the program</div>
-            <h3 className="text-2xl font-bold mb-4">Partnership</h3>
-            <p className="text-indigo-200 text-sm leading-relaxed">Fundraisers, physicians, and foundation leadership working from the same patient view - as a coordinated team, with the right information for each role.</p>
+          <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-2">For the program</div>
+            <h3 className="text-2xl font-bold mb-4 text-indigo-950">Partnership</h3>
+            <p className="text-slate-500 text-sm leading-relaxed">Fundraisers, physicians, and foundation leadership working from the same patient view - as a coordinated team, with the right information for each role.</p>
           </div>
         </div>
 

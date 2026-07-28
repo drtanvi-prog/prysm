@@ -31,7 +31,7 @@ export const CTA = () => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between shadow-2xl">
+        <div className="bg-indigo-900 border border-indigo-800 rounded-2xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between shadow-2xl">
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-0">Start the conversation.</h3>
           <div className="text-right">
             <a href="mailto:sales@actionableinsightai.com" className="block text-lg font-medium text-white hover:text-blue-200 transition-colors">
