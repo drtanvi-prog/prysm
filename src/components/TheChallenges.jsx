@@ -23,7 +23,7 @@ export const TheChallenges = () => {
   ];
 
   return (
-    <section className="py-24 bg-white border-t border-slate-100">
+    <section className="py-32 bg-white border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="text-sm font-semibold tracking-wide text-blue-600 uppercase mb-3">The Problem</div>
@@ -46,9 +46,9 @@ export const TheChallenges = () => {
             </div>
           ))}
           
-          <div className="bg-indigo-950 p-8 rounded-2xl border border-indigo-800 shadow-sm flex flex-col h-full justify-center items-center text-center">
-            <h3 className="text-2xl font-bold text-white mb-2">The Cost of Inaction</h3>
-            <p className="text-indigo-200 text-sm">Every day these challenges persist is another missed opportunity to connect with a grateful patient.</p>
+          <div className="bg-white p-8 rounded-2xl border-2 border-indigo-900 shadow-sm flex flex-col h-full justify-center items-center text-center">
+            <h3 className="text-2xl font-bold text-indigo-950 mb-2">The Cost of Inaction</h3>
+            <p className="text-slate-500 text-sm">Every day these challenges persist is another missed opportunity to connect with a grateful patient.</p>
           </div>
         </div>
       </div>

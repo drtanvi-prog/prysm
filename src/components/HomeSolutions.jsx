@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export const HomeSolutions = () => {
   return (
-    <section className="py-24 bg-slate-50 border-t border-slate-200">
+    <section className="py-32 bg-slate-50 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
@@ -109,9 +109,6 @@ export const HomeSolutions = () => {
                 <div className="text-xs font-mono text-blue-600 bg-blue-50 px-2 py-1 rounded">Exporting</div>
               </div>
             </div>
-            
-            {/* Background design elements */}
-            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 border-[40px] border-slate-50 rounded-full opacity-50"></div>
           </div>
 
         </div>

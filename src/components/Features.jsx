@@ -11,7 +11,7 @@ export const Features = () => {
   ];
 
   return (
-    <section className="py-24 bg-slate-50 border-t border-slate-100">
+    <section className="py-32 bg-white border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <div className="text-sm font-semibold tracking-wide text-blue-600 uppercase mb-3">What Prysm Does</div>
@@ -24,19 +24,19 @@ export const Features = () => {
         </div>
 
         {/* Value Props Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
-            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-2">For the team</div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+          <div className="bg-slate-50 p-10 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-4">For the team</div>
             <h3 className="text-2xl font-bold mb-4 text-indigo-950">Insight</h3>
             <p className="text-slate-500 text-sm leading-relaxed">Shared visibility for everyone in the program - from the development officer making calls to the Chief Development Officer briefing the board.</p>
           </div>
-          <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
-            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-2">For the day's work</div>
+          <div className="bg-white p-10 rounded-2xl border-2 border-indigo-900 shadow-sm">
+            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-4">For the day's work</div>
             <h3 className="text-2xl font-bold mb-4 text-indigo-950">Efficiency</h3>
             <p className="text-slate-500 text-sm leading-relaxed">Time-consuming work - list-building, screening, call logging, hand-offs - is handled in the background, so fundraisers can focus on donor relationships.</p>
           </div>
-          <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
-            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-2">For the program</div>
+          <div className="bg-slate-50 p-10 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-4">For the program</div>
             <h3 className="text-2xl font-bold mb-4 text-indigo-950">Partnership</h3>
             <p className="text-slate-500 text-sm leading-relaxed">Fundraisers, physicians, and foundation leadership working from the same patient view - as a coordinated team, with the right information for each role.</p>
           </div>

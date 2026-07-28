@@ -2,6 +2,7 @@ import { Hero } from '../components/Hero'
 import { TheOpportunity } from '../components/TheOpportunity'
 import { TheChallenges } from '../components/TheChallenges'
 import { HomeSolutions } from '../components/HomeSolutions'
+import { FAQ } from '../components/FAQ'
 import { CTA } from '../components/CTA'
 
 export const Home = () => {
@@ -28,6 +29,7 @@ export const Home = () => {
       <TheOpportunity />
       <TheChallenges />
       <HomeSolutions />
+      <FAQ />
       <CTA />
     </>
   )
