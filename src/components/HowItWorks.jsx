@@ -1,15 +1,46 @@
+import { useState } from 'react'
+
 export const HowItWorks = () => {
+  const [activeStep, setActiveStep] = useState(0)
+
   const steps = [
-    { title: "Identify grateful patients" },
-    { title: "Engage clinicians" },
-    { title: "Qualify prospects" },
-    { title: "Hand off to your CRM" },
-    { title: "Report impact back" }
-  ];
+    {
+      step: "Step 1",
+      title: "Identify grateful patients",
+      description: "Single click reporting and automated encounter analysis provides fundraisers with real time access to patients with greatest affinity and capacity.",
+      image: "/step-1.829c359c.svg"
+    },
+    {
+      step: "Step 2",
+      title: "Engage clinicians",
+      description: "When clinicians are engaged in a process with analytically sound information and consistent follow up reporting, they are highly willing to partner with development.",
+      image: "/step-2.88960699.svg"
+    },
+    {
+      step: "Step 3",
+      title: "Qualify prospects",
+      description: "Intuitive in-platform phone call and email tracking enables fundraisers to efficiently record discovery activity.",
+      image: "/step-3.57f5e397.svg"
+    },
+    {
+      step: "Step 4",
+      title: "Hand off to your CRM",
+      description: "Intuitive single click reporting enables fundraisers to view clinicians’ patients using a scoring model that combines affinity and capacity.",
+      image: "/step-4_1.b7da9f35.svg"
+    },
+    {
+      step: "Step 5",
+      title: "Report impact back",
+      description: "Easily track and record outcomes of discovery activity to optimize program strategy.",
+      image: "/step-5.ac1ea224.svg"
+    }
+  ]
 
   return (
     <section className="py-24 sm:py-32 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="hairline"></span>
@@ -22,36 +53,43 @@ export const HowItWorks = () => {
           </p>
         </div>
 
-        {/* Pipeline Visual */}
-        <div className="relative mt-16 mb-20 hidden md:block">
-          <div className="absolute top-6 left-[10%] w-[80%] h-px bg-slate-300 -translate-y-1/2 z-0"></div>
-
-          <div className="flex justify-between relative z-10">
-            {steps.map((step, i) => (
-              <div key={i} className="flex flex-col items-center w-1/5">
-                <div className="w-12 h-12 rounded-full bg-ink flex items-center justify-center font-bold text-white mb-4 shadow-md ring-4 ring-slate-50">
-                  {i + 1}
-                </div>
-                <div className="text-center text-sm font-medium text-slate-900 px-2">
-                  {step.title}
-                </div>
-              </div>
+        {/* Interactive Tabs Layout */}
+        <div className="mb-24">
+          {/* Tabs Header */}
+          <div className="flex overflow-x-auto lg:flex-wrap pb-4 lg:pb-0 gap-6 lg:gap-0 lg:justify-between border-b border-slate-200 mb-12 scrollbar-none">
+            {steps.map((step, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveStep(index)}
+                className={`pb-4 flex-shrink-0 lg:flex-1 text-left px-2 border-b-2 transition-colors cursor-pointer min-w-[140px] ${
+                  activeStep === index 
+                    ? 'border-accent text-slate-900 font-semibold' 
+                    : 'border-transparent text-slate-400 hover:text-slate-600 hover:border-slate-300'
+                }`}
+              >
+                <div className="text-xs font-bold uppercase tracking-wider mb-1">{step.step}</div>
+                <div className="text-sm">{step.title}</div>
+              </button>
             ))}
           </div>
-        </div>
 
-        {/* Mobile Pipeline */}
-        <div className="md:hidden space-y-4 mb-16">
-          {steps.map((step, i) => (
-            <div key={i} className="flex items-center gap-4 bg-white border border-slate-200 p-4 rounded-lg shadow-sm">
-               <div className="w-10 h-10 flex-shrink-0 rounded-full bg-ink flex items-center justify-center font-bold text-white shadow-sm">
-                  {i + 1}
-                </div>
-                <div className="font-medium text-ink">
-                  {step.title}
-                </div>
+          {/* Tab Content */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[360px] py-8">
+            <div>
+              <h3 className="text-2xl font-bold text-ink mb-4">{steps[activeStep].title}</h3>
+              <p className="text-lg text-slate-500 font-light leading-relaxed">
+                {steps[activeStep].description}
+              </p>
             </div>
-          ))}
+            <div className="flex justify-center">
+              <img 
+                src={steps[activeStep].image} 
+                alt={steps[activeStep].title}
+                className="max-w-full h-auto object-contain"
+                style={{ maxHeight: '350px' }}
+              />
+            </div>
+          </div>
         </div>
 
         {/* Comparison Boxes */}
@@ -64,13 +102,12 @@ export const HowItWorks = () => {
             <h4 className="text-xl font-bold text-ink mb-3">Donor CRMs</h4>
             <p className="text-slate-500 text-sm leading-relaxed">hold the data - but never report results back.</p>
           </div>
-          <div className="bg-ink p-10 rounded-2xl shadow-sm flex items-center">
+          <div className="bg-ink px-6 py-10 sm:p-10 rounded-2xl shadow-sm flex items-center justify-center sm:justify-start">
             <h4 className="text-2xl font-bold text-white">Only Prysm does both.</h4>
           </div>
         </div>
 
       </div>
-
     </section>
   )
 }

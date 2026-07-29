@@ -46,9 +46,14 @@ export const Hero = () => {
                   <div className="text-xs text-slate-500 mt-0.5">Clinical record</div>
                 </div>
 
-                <div className="flex sm:flex-col items-center gap-1 px-1 rotate-90 sm:rotate-0">
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent"></span>
-                  <span className="w-10 h-px bg-slate-300"></span>
+                {/* Connection Line 1 */}
+                <div className="hidden sm:flex items-center justify-center flex-1 relative min-w-[40px] px-2">
+                  <div className="w-full h-px bg-slate-300"></div>
+                  <div className="absolute w-2 h-2 rounded-full bg-accent"></div>
+                </div>
+                <div className="flex sm:hidden flex-col items-center justify-center h-8 relative">
+                  <div className="w-px h-full bg-slate-300"></div>
+                  <div className="absolute w-2 h-2 rounded-full bg-accent"></div>
                 </div>
 
                 <div className="flex-1 text-center w-full sm:w-auto">
@@ -59,9 +64,14 @@ export const Hero = () => {
                   <div className="text-xs text-slate-500 mt-0.5">The bridge</div>
                 </div>
 
-                <div className="flex sm:flex-col items-center gap-1 px-1 rotate-90 sm:rotate-0">
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent"></span>
-                  <span className="w-10 h-px bg-slate-300"></span>
+                {/* Connection Line 2 */}
+                <div className="hidden sm:flex items-center justify-center flex-1 relative min-w-[40px] px-2">
+                  <div className="w-full h-px bg-slate-300"></div>
+                  <div className="absolute w-2 h-2 rounded-full bg-accent"></div>
+                </div>
+                <div className="flex sm:hidden flex-col items-center justify-center h-8 relative">
+                  <div className="w-px h-full bg-slate-300"></div>
+                  <div className="absolute w-2 h-2 rounded-full bg-accent"></div>
                 </div>
 
                 <div className="flex-1 text-center w-full sm:w-auto">
@@ -75,16 +85,16 @@ export const Hero = () => {
                 </div>
               </div>
 
-              <div className="mt-7 sm:mt-8 pt-6 border-t border-slate-200 grid grid-cols-3 gap-2 sm:gap-4 text-center">
+              <div className="mt-7 sm:mt-8 pt-6 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-4 text-center">
                 <div>
                   <div className="text-xl sm:text-2xl font-bold text-ink">$4.3M</div>
                   <div className="text-[10px] sm:text-[11px] text-slate-500 mt-1 leading-tight">First-year gifts</div>
                 </div>
-                <div>
+                <div className="border-t sm:border-t-0 sm:border-x border-slate-100 py-3 sm:py-0">
                   <div className="text-xl sm:text-2xl font-bold text-ink">+1,233%</div>
                   <div className="text-[10px] sm:text-[11px] text-slate-500 mt-1 leading-tight">First-time gifts</div>
                 </div>
-                <div>
+                <div className="border-t sm:border-t-0 border-slate-100 pt-3 sm:pt-0">
                   <div className="text-xl sm:text-2xl font-bold text-ink">+3,225%</div>
                   <div className="text-[10px] sm:text-[11px] text-slate-500 mt-1 leading-tight">Physician referrals</div>
                 </div>

@@ -2,7 +2,11 @@ export const About = () => {
   return (
     <div className="bg-white">
       {/* Header Section */}
-      <section className="bg-ink py-24 sm:py-32 relative overflow-hidden">
+      <section 
+        className="relative py-24 sm:py-32 bg-cover bg-center flex flex-col justify-center min-h-[380px]"
+        style={{ backgroundImage: "url('/about-banner1.53c600cf.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-ink/80"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
@@ -12,7 +16,7 @@ export const About = () => {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6">
               Your success is <span className="text-accent-soft font-semibold">our success.</span>
             </h1>
-            <p className="text-xl text-slate-300 leading-relaxed max-w-2xl">
+            <p className="text-xl text-slate-200 leading-relaxed max-w-2xl">
               Our mission is to advance global healthcare one client at a time. Efficiency without compromise.
             </p>
           </div>

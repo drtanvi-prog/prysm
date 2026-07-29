@@ -4,7 +4,7 @@ export const Contact = () => {
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-2">
 
         {/* Left Side - Info */}
-        <div className="bg-ink p-10 sm:p-16 lg:p-24 flex flex-col justify-center">
+        <div className="bg-ink px-6 py-12 sm:p-16 lg:p-24 flex flex-col justify-center">
           <div className="max-w-xl mx-auto w-full">
                 <div className="flex items-center gap-3 mb-6">
                   <span className="w-10 h-px bg-accent"></span>
@@ -54,7 +54,7 @@ export const Contact = () => {
         </div>
 
         {/* Right Side - Form */}
-        <div className="p-10 sm:p-16 lg:p-24 bg-slate-50 flex flex-col justify-center items-center">
+        <div className="px-6 py-12 sm:p-16 lg:p-24 bg-slate-50 flex flex-col justify-center items-center">
           <div className="max-w-xl mx-auto w-full">
             <form className="space-y-6" action="/#/thankyou" method="POST" name="contact">
               <input type="hidden" name="form-name" value="contact" />

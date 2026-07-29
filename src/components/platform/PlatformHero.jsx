@@ -50,7 +50,7 @@ export const PlatformHero = () => {
           <div className="flex items-center mb-4">
             <img src={prysmIconLight} alt="Prysm Logo" className="h-10 w-auto object-contain" />
           </div>
-          <h1 className="text-5xl md:text-6xl font-light text-white">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-light text-white">
             How it works
           </h1>
         </div>
@@ -69,12 +69,12 @@ export const PlatformHero = () => {
       {/* Interactive Tabs Section */}
       <section className="max-w-6xl mx-auto px-4 pb-32">
         {/* Tabs Header */}
-        <div className="flex flex-wrap justify-between border-b border-slate-200 mb-16">
+        <div className="flex overflow-x-auto lg:flex-wrap pb-4 lg:pb-0 gap-6 lg:gap-0 lg:justify-between border-b border-slate-200 mb-16 scrollbar-none">
           {steps.map((step, index) => (
             <button
               key={index}
               onClick={() => setActiveStep(index)}
-              className={`pb-4 flex-1 text-left px-2 border-b-2 transition-colors cursor-pointer ${
+              className={`pb-4 flex-shrink-0 lg:flex-1 text-left px-2 border-b-2 transition-colors cursor-pointer min-w-[140px] ${
                 activeStep === index 
                   ? 'border-accent text-slate-900' 
                   : 'border-transparent text-slate-400 hover:text-slate-600 hover:border-slate-300'

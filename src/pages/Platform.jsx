@@ -26,15 +26,16 @@ export const Platform = () => {
 
           {/* Architecture Diagram */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-16">
-            <div className="bg-slate-100/50 border border-slate-200 rounded-xl p-8 text-left w-64 shadow-sm">
+            <div className="bg-slate-100/50 border border-slate-200 rounded-xl p-8 text-left w-full max-w-[280px] shadow-sm">
               <div className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-2">Clinical Source</div>
               <div className="text-xl font-bold text-ink mb-1">EMR</div>
               <div className="text-sm text-slate-500">Epic • Cerner • MEDITECH</div>
             </div>
 
+            <div className="text-slate-400 text-2xl md:hidden">↓</div>
             <div className="text-slate-400 text-2xl hidden md:block">→</div>
 
-            <div className="bg-white rounded-xl p-8 text-left w-72 shadow-lg border-2 border-accent relative">
+            <div className="bg-white rounded-xl p-8 text-left w-full max-w-[320px] shadow-lg border-2 border-accent relative">
               <div className="absolute top-0 right-0 -mt-3 -mr-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm">SALESFORCE NATIVE</div>
               <div className="text-xs text-accent font-bold uppercase tracking-wider mb-2">The Engine</div>
               <div className="text-2xl font-bold text-ink mb-4">Prysm</div>
@@ -47,9 +48,10 @@ export const Platform = () => {
               </div>
             </div>
 
+            <div className="text-slate-400 text-2xl md:hidden">↓</div>
             <div className="text-slate-400 text-2xl hidden md:block">→</div>
 
-            <div className="bg-slate-100/50 border border-slate-200 rounded-xl p-8 text-left w-64 shadow-sm">
+            <div className="bg-slate-100/50 border border-slate-200 rounded-xl p-8 text-left w-full max-w-[280px] shadow-sm">
               <div className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-2">Your System of Record</div>
               <div className="text-xl font-bold text-ink mb-2">Donor CRM</div>
               <div className="text-sm text-slate-500">Blackbaud, Salesforce &amp; more</div>

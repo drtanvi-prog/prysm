@@ -26,24 +26,24 @@ export const PlatformCaseStudy = () => {
             
             {/* CSS Funnel Container */}
             <div 
-              className="w-full flex flex-col gap-[2px] overflow-hidden" 
-              style={{ clipPath: 'polygon(0 0, 100% 0, 55% 100%, 45% 100%)' }}
+              className="w-full flex flex-col gap-[2px] overflow-hidden px-4" 
+              style={{ clipPath: 'polygon(0 0, 100% 0, 70% 100%, 30% 100%)' }}
             >
-              <div className="bg-accent-strong text-white text-xs font-bold py-4 text-center">
+              <div className="bg-accent-strong text-white text-[10px] sm:text-xs font-bold py-4 text-center px-6">
                 204,543 Patients
               </div>
-              <div className="bg-accent text-white text-xs font-bold py-4 text-center">
+              <div className="bg-accent text-white text-[10px] sm:text-xs font-bold py-4 text-center px-8">
                 1,387 Referrals
               </div>
-              <div className="bg-accent/80 text-white text-xs font-bold py-4 text-center">
+              <div className="bg-accent/80 text-white text-[10px] sm:text-xs font-bold py-4 text-center px-10">
                 <div className="mb-1">4161 Attempts /</div>
                 <div>146 Discovery Visits</div>
               </div>
-              <div className="bg-accent/60 text-white text-xs font-bold py-4 text-center">
-                <div className="mb-1">41 Qualified Major</div>
-                <div>Gift Prospects</div>
+              <div className="bg-accent/60 text-white text-[10px] sm:text-xs font-bold py-4 text-center px-12">
+                <div className="mb-1 text-[9px] sm:text-xs">41 Qualified Major</div>
+                <div className="text-[9px] sm:text-xs">Gift Prospects</div>
               </div>
-              <div className="bg-accent-soft text-ink text-xs font-bold py-4 text-center">
+              <div className="bg-accent-soft text-ink text-[10px] sm:text-xs font-bold py-4 text-center px-14">
                 8 Gifts
               </div>
             </div>
