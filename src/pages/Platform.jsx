@@ -6,11 +6,17 @@ import { PlatformClinicians } from '../components/platform/PlatformClinicians'
 import { PlatformIntegrations } from '../components/platform/PlatformIntegrations'
 import { PlatformSubNav } from '../components/platform/PlatformSubNav'
 import { CTA } from '../components/CTA'
+import { useSEO } from '../utils/useSEO'
 
 export const Platform = () => {
+  useSEO(
+    'Our Platform - Native Salesforce Healthcare CRM',
+    'Prysm is an enterprise-wide platform built natively on Salesforce Health Cloud. Securely identify, engage, and qualify major gift prospects.'
+  )
+
   return (
     <div className="bg-white">
-      <div className="pt-32 pb-16 bg-slate-50 border-b border-slate-200 text-center">
+      <div className="pt-16 pb-12 sm:pt-24 sm:pb-16 md:pt-32 md:pb-17 bg-slate-50 border-b border-slate-200 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center gap-3 mb-6">
             <span className="hairline"></span>

@@ -5,7 +5,7 @@ import rutgersLogo from '../assets/integration/Rutgers-Health-Lockup_Horizontal_
 
 export const Hero = () => {
   return (
-    <section className="relative overflow-hidden pt-20 pb-14 sm:pt-28 sm:pb-16 lg:pt-36 lg:pb-20 bg-white">
+    <section className="relative overflow-hidden pt-12 pb-14 sm:pt-24 sm:pb-16 lg:pt-36 lg:pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 

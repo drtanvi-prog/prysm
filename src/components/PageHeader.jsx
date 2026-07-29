@@ -1,6 +1,6 @@
 export const PageHeader = ({ label, title, subtitle }) => {
   return (
-    <section className="pt-32 pb-20 bg-slate-50 border-b border-slate-200">
+    <section className="pt-16 pb-12 sm:pt-24 sm:pb-16 md:pt-32 md:pb-20 bg-slate-50 border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {label && (
           <div className="flex items-center justify-center gap-3 mb-6">

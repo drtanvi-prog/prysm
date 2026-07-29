@@ -1,9 +1,15 @@
+import { useSEO } from '../utils/useSEO'
+
 export const About = () => {
+  useSEO(
+    'About Us - Actionable Insight',
+    'Our mission is to advance global healthcare. Learn how we built Prysm to bridge the gap between healthcare systems and philanthropy.'
+  )
+
   return (
     <div className="bg-white">
-      {/* Header Section */}
       <section 
-        className="relative py-24 sm:py-32 bg-cover bg-center flex flex-col justify-center min-h-[380px]"
+        className="relative pt-16 pb-16 sm:py-28 lg:py-32 bg-cover bg-center flex flex-col justify-center min-h-[280px] sm:min-h-[380px]"
         style={{ backgroundImage: "url('/about-banner1.53c600cf.jpg')" }}
       >
         <div className="absolute inset-0 bg-ink/80"></div>

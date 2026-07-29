@@ -1,4 +1,11 @@
+import { useSEO } from '../utils/useSEO'
+
 export const Contact = () => {
+  useSEO(
+    'Request a Demo - Start the Conversation',
+    'Explore whether Prysm is the right next step for your healthcare system. Request a custom grateful patient program review and demo today.'
+  )
+
   return (
     <div className="bg-white min-h-[calc(100vh-5rem)] flex flex-col">
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-2">

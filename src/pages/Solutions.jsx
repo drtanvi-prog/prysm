@@ -1,7 +1,13 @@
 import { CTA } from '../components/CTA'
 import { PageHeader } from '../components/PageHeader'
+import { useSEO } from '../utils/useSEO'
 
 export const Solutions = () => {
+  useSEO(
+    'Role-Based Solutions for Healthcare Fundraising',
+    'Tailored views for Frontline Fundraisers, Prospect Researchers, and Chief Development Officers. Align your team on a single source of grateful patient truth.'
+  )
+
   return (
     <div className="bg-white">
 
