@@ -2,6 +2,8 @@ import providenceLogo from '../assets/integration/providence-health-services.svg
 import cityOfHopeLogo from '../assets/integration/city-of-hope-logo-vector.png';
 import lsuHealthLogo from '../assets/integration/lsu-health-sciences-center-new-orleans-logo-brand-product-design-png-favpng-MQGePmn6RGsC2b3fhkBN0HJmC.png';
 import rutgersLogo from '../assets/integration/Rutgers-Health-Lockup_Horizontal_Red-and-Black_RGB.svg';
+import prysmIcon from '../assets/icons/prysm-icon-dark.svg';
+import { Logo } from '../utils/Icons';
 
 export const Hero = () => {
   return (
@@ -56,12 +58,10 @@ export const Hero = () => {
                   <div className="absolute w-2 h-2 rounded-full bg-accent"></div>
                 </div>
 
-                <div className="flex-1 text-center w-full sm:w-auto">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-xl bg-ink flex items-center justify-center mb-3 shadow-md">
-                    <span className="text-white font-bold text-lg">P</span>
+                <div className="flex-1 text-center w-full sm:w-auto flex flex-col items-center justify-center">
+                  <div className="h-14 sm:h-16 flex items-center justify-center">
+                    <img src={prysmIcon} alt="Prysm" className="h-7 sm:h-9 w-auto object-contain" />
                   </div>
-                  <div className="text-sm font-bold text-ink">Prysm</div>
-                  <div className="text-xs text-slate-500 mt-0.5">The bridge</div>
                 </div>
 
                 {/* Connection Line 2 */}

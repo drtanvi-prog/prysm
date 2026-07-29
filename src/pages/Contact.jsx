@@ -1,10 +1,32 @@
 import { useSEO } from '../utils/useSEO'
+import { useNavigate } from 'react-router-dom'
 
 export const Contact = () => {
+  const navigate = useNavigate()
+
   useSEO(
     'Request a Demo - Start the Conversation',
     'Explore whether Prysm is the right next step for your healthcare system. Request a custom grateful patient program review and demo today.'
   )
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    
+    // Netlify form submission handling
+    const myForm = e.target
+    const formData = new FormData(myForm)
+    
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate('/thank-you'))
+      .catch((error) => {
+        console.error(error)
+        navigate('/thank-you') // fallback
+      })
+  }
 
   return (
     <div className="bg-white min-h-[calc(100vh-5rem)] flex flex-col">
@@ -63,7 +85,7 @@ export const Contact = () => {
         {/* Right Side - Form */}
         <div className="px-6 py-12 sm:p-16 lg:p-24 bg-slate-50 flex flex-col justify-center items-center">
           <div className="max-w-xl mx-auto w-full">
-            <form className="space-y-6" action="/#/thankyou" method="POST" name="contact">
+            <form className="space-y-6" onSubmit={handleSubmit} name="contact">
               <input type="hidden" name="form-name" value="contact" />
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
