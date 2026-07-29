@@ -42,17 +42,17 @@ export const PlatformSubNav = () => {
   }
 
   return (
-    <div className="sticky top-20 z-40 bg-white/90 backdrop-blur-sm border-b border-slate-100 shadow-sm">
+    <div className="sticky top-20 z-40 bg-white/90 backdrop-blur-sm border-b border-slate-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex gap-1 overflow-x-auto scrollbar-none py-3">
           {sections.map(({ id, label }) => (
             <button
               key={id}
               onClick={() => scrollTo(id)}
-              className={`flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg transition-all ${
+              className={`flex-shrink-0 px-4 py-2 text-sm font-medium rounded-lg transition-all cursor-pointer ${
                 active === id
-                  ? 'bg-blue-50 text-blue-700'
-                  : 'text-slate-500 hover:text-indigo-950 hover:bg-slate-50'
+                  ? 'bg-accent-soft text-ink'
+                  : 'text-slate-500 hover:text-ink hover:bg-slate-100'
               }`}
             >
               {label}

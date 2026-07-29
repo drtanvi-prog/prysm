@@ -27,27 +27,32 @@ export const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section className="py-32 bg-white border-t border-slate-100">
+    <section className="py-24 sm:py-32 bg-slate-50 border-t border-slate-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-indigo-950 mb-4">Frequently Asked Questions</h2>
-          <p className="text-slate-500">Everything you need to know about the product and billing.</p>
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <span className="hairline"></span>
+            <span className="eyebrow">Questions</span>
+            <span className="hairline"></span>
+          </div>
+          <h2 className="text-3xl font-bold text-ink mb-4">Frequently asked questions</h2>
+          <p className="text-slate-500">Everything you need to know about the product and implementation.</p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3">
           {faqs.map((faq, index) => (
-            <div 
-              key={index} 
-              className="border border-slate-200 rounded-lg overflow-hidden bg-slate-50"
+            <div
+              key={index}
+              className="border border-slate-200 rounded-xl overflow-hidden bg-white"
             >
               <button
-                className="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none cursor-pointer"
+                className="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none cursor-pointer"
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
               >
-                <span className="font-semibold text-indigo-950">{faq.question}</span>
+                <span className="font-semibold text-ink">{faq.question}</span>
                 <span className="ml-6 flex-shrink-0">
                   {openIndex === index ? (
-                    <svg className="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
                     </svg>
                   ) : (
@@ -57,10 +62,10 @@ export const FAQ = () => {
                   )}
                 </span>
               </button>
-              
+
               {openIndex === index && (
-                <div className="px-6 pb-4">
-                  <p className="text-slate-600 text-sm leading-relaxed">{faq.answer}</p>
+                <div className="px-6 pb-5">
+                  <p className="text-slate-500 text-sm leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </div>

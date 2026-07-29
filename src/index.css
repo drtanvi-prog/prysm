@@ -1,45 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
+/*
+  PRYSM token system - v2
+  ------------------------
+  Brand direction: modern healthcare technology, not nonprofit warmth.
+  Precision, clarity, clinical trust. White space carries the design;
+  color is used sparingly and only where it does a job.
+
+  ink       deep indigo/purple - innovation, intelligence, strategy.
+            Used for dark fields (footer, occasional emphasis panels)
+            and as the primary text color on light backgrounds.
+  accent    "clinical blue" - the SINGLE limited accent. Reserved for
+            interactive/important moments only: primary buttons, active
+            nav state, links, key highlighted figures. Never used to
+            flood backgrounds or decorate.
+  slate     neutral scale (Tailwind's built-in slate-*) - precision,
+            enterprise software, clean architecture.
+  white     the resting surface. Clinical, spacious, uncluttered.
+*/
 @theme {
-  --color-indigo-950: #1e1b4b;
-  --color-indigo-900: #312e81;
-  --color-blue-600: #2563eb;
-  --color-slate-500: #64748b;
-  --color-slate-800: #1e293b;
-  --color-slate-50: #f8fafc;
-  
+  --color-ink: #1E1B4B;
+  --color-ink-soft: #322D74;
+  --color-ink-dim: #131230;
+
+  --color-accent: #2F5A96;
+  --color-accent-soft: #E8EEF6;
+  --color-accent-strong: #1F4373;
+
   --font-sans: "Inter", sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-slate-50 text-slate-800 antialiased font-sans;
+    @apply bg-white text-slate-900 antialiased font-sans;
   }
 
-  /* Custom Scrollbar for Chrome/Safari/Edge */
+  ::selection {
+    background: var(--color-accent-soft);
+    color: var(--color-ink);
+  }
+
   ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+    width: 11px;
+    height: 11px;
   }
 
   ::-webkit-scrollbar-track {
-    background: var(--color-slate-50);
+    background: #f8fafc;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #cbd5e1; /* slate-300 */
+    background: #cbd5e1;
     border-radius: 6px;
-    border: 3px solid var(--color-slate-50);
+    border: 3px solid #f8fafc;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #94a3b8; /* slate-400 */
+    background: #94a3b8;
   }
-  
-  /* Custom Scrollbar for Firefox */
+
   * {
     scrollbar-width: thin;
-    scrollbar-color: #cbd5e1 var(--color-slate-50);
+    scrollbar-color: #cbd5e1 #f8fafc;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold tracking-[0.16em] text-slate-500 uppercase;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply w-1.5 h-1.5 rounded-full inline-block;
+    background: var(--color-accent);
+  }
+  .hairline {
+    @apply w-8 h-px bg-slate-200;
   }
 }

@@ -76,7 +76,7 @@ export const PlatformHero = () => {
               onClick={() => setActiveStep(index)}
               className={`pb-4 flex-1 text-left px-2 border-b-2 transition-colors cursor-pointer ${
                 activeStep === index 
-                  ? 'border-amber-500 text-slate-900' 
+                  ? 'border-accent text-slate-900' 
                   : 'border-transparent text-slate-400 hover:text-slate-600 hover:border-slate-300'
               }`}
             >

@@ -9,34 +9,35 @@ export const Header = () => {
     const navLinks = [
         { title: "Platform", href: "/platform" },
         { title: "Solutions", href: "/solutions" },
+        { title: "Results", href: "/results" },
         { title: "About", href: "/about" },
-        { title: "Contact", href: "/contact" },
     ]
 
     return (
-        <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <header className="bg-white/90 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
-                
+
                 {/* Logo Section */}
                 <div className="flex-shrink-0 flex items-center">
-                    <Link to="/" className="flex items-center gap-2" aria-label="Actionable Insight Home">
+                    <Link to="/" className="flex items-center gap-2" aria-label="Prysm Home">
                         <Logo />
                     </Link>
                 </div>
 
                 {/* Desktop Navigation */}
-                <ul className="hidden md:flex gap-8">
+                <ul className="hidden md:flex gap-10">
                     {navLinks.map((link) => {
                         const isActive = location.pathname.startsWith(link.href)
                         return (
                         <li key={link.title}>
-                            <Link 
-                                to={link.href} 
-                                className={`text-sm font-medium transition-colors ${
-                                    isActive ? "text-blue-600" : "text-slate-600 hover:text-indigo-950"
+                            <Link
+                                to={link.href}
+                                className={`relative text-[15px] font-medium transition-colors pb-1 ${
+                                    isActive ? "text-ink" : "text-slate-500 hover:text-ink"
                                 }`}
                             >
                                 {link.title}
+                                <span className={`absolute left-0 -bottom-0.5 h-[2px] w-full bg-accent transition-opacity ${isActive ? "opacity-100" : "opacity-0"}`}></span>
                             </Link>
                         </li>
                     )})}
@@ -44,16 +45,20 @@ export const Header = () => {
 
                 {/* Right Side Actions */}
                 <div className="hidden md:flex items-center gap-4">
-                    <Link to="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-md text-sm font-medium transition-colors shadow-sm">
+                    <Link to="/security" className="text-[15px] font-medium text-slate-500 hover:text-ink transition-colors">
+                        Security
+                    </Link>
+                    <Link to="/contact" className="bg-ink hover:bg-ink-soft text-white px-5 py-2.5 rounded-full text-sm font-medium transition-colors shadow-sm">
                         Request Demo
                     </Link>
                 </div>
 
                 {/* Mobile Menu Button */}
                 <div className="md:hidden flex items-center">
-                    <button 
+                    <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className="text-slate-600 hover:text-indigo-950 focus:outline-none"
+                        aria-label="Toggle menu"
+                        className="text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md p-1"
                     >
                         {isMobileMenuOpen ? (
                             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -72,26 +77,26 @@ export const Header = () => {
             {/* Mobile Menu Dropdown */}
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-white border-b border-slate-200">
-                    <div className="px-4 pt-2 pb-6 space-y-2 shadow-lg">
-                        {navLinks.map((link) => {
+                    <div className="px-4 pt-2 pb-6 space-y-1 shadow-lg">
+                        {[...navLinks, { title: "Security", href: "/security" }].map((link) => {
                             const isActive = location.pathname.startsWith(link.href)
                             return (
-                            <Link 
+                            <Link
                                 key={link.title}
-                                to={link.href} 
+                                to={link.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                                    isActive ? "text-blue-700 bg-blue-50" : "text-slate-700 hover:text-indigo-950 hover:bg-slate-50"
+                                    isActive ? "text-ink bg-accent-soft" : "text-slate-500 hover:text-ink hover:bg-slate-50"
                                 }`}
                             >
                                 {link.title}
                             </Link>
                         )})}
                         <div className="pt-4 pb-2 px-3">
-                            <Link 
-                                to="/contact" 
+                            <Link
+                                to="/contact"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-md text-base font-medium transition-colors shadow-sm"
+                                className="block w-full text-center bg-ink hover:bg-ink-soft text-white px-5 py-3 rounded-full text-base font-medium transition-colors shadow-sm"
                             >
                                 Request Demo
                             </Link>

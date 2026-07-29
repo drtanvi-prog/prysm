@@ -5,11 +5,15 @@ import blackbaudLogo from '../../assets/integration/blackbaud-vector-logo.png';
 
 export const PlatformIntegrations = () => {
   return (
-    <section className="py-32 bg-white border-t border-slate-100">
+    <section className="py-32 bg-white border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="text-sm font-semibold tracking-wide text-blue-600 uppercase mb-3">Integrations Ecosystem</div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-indigo-950 mb-6">
+          <div className="flex gap-2 items-center justify-center mb-4">
+            <span className="hairline"></span>
+            <span className="eyebrow">Integrations Ecosystem</span>
+            <span className="hairline"></span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-6">
             Connected to the systems you already use.
           </h2>
           <p className="text-lg text-slate-500">
@@ -21,7 +25,7 @@ export const PlatformIntegrations = () => {
           
           {/* EMR Integrations */}
           <div className="bg-slate-50 p-10 rounded-2xl border border-slate-200 shadow-sm flex flex-col h-full text-center">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-indigo-900 mb-8">Clinical Data (EMR)</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-ink-soft mb-8">Clinical Data (EMR)</h3>
             <div className="flex-1 flex flex-col gap-10 w-full items-center justify-center">
               <img src={epicLogo} alt="Epic Systems" className="h-20 object-contain mix-blend-multiply" />
               <img src={cernerLogo} alt="Cerner" className="h-12 object-contain mix-blend-multiply" />
@@ -33,7 +37,7 @@ export const PlatformIntegrations = () => {
 
           {/* Core Platform */}
           <div className="bg-slate-50 p-10 rounded-2xl border border-slate-200 shadow-sm flex flex-col h-full text-center">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-indigo-900 mb-8">Native Platform</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-ink-soft mb-8">Native Platform</h3>
             <div className="flex-1 flex flex-col gap-4 w-full items-center justify-center">
               <img src={salesforceLogo} alt="Salesforce" className="h-20 object-contain mix-blend-multiply" />
               <div className="text-xl font-semibold text-slate-700">Health Cloud</div>
@@ -45,7 +49,7 @@ export const PlatformIntegrations = () => {
 
           {/* CRM Integrations */}
           <div className="bg-slate-50 p-10 rounded-2xl border border-slate-200 shadow-sm flex flex-col h-full text-center">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-indigo-900 mb-8">Donor Systems (CRM)</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-ink-soft mb-8">Donor Systems (CRM)</h3>
             <div className="flex-1 flex flex-col gap-6 w-full items-center justify-center">
               <img src={blackbaudLogo} alt="Blackbaud" className="h-16 object-contain mix-blend-multiply" />
             </div>

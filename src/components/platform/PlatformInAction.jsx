@@ -1,12 +1,15 @@
 export const PlatformInAction = () => {
   return (
-    <section className="py-24 lg:py-32 bg-slate-50 border-t border-slate-100">
+    <section className="py-24 lg:py-32 bg-slate-50 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="mb-16 max-w-3xl">
-          <div className="text-sm font-semibold tracking-wide text-blue-600 uppercase mb-4">Prysm in Action</div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-indigo-950 mb-6 leading-tight">
+          <div className="flex gap-2 items-center mb-4">
+            <span className="hairline"></span>
+            <span className="eyebrow">Prysm in Action</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-6 leading-tight">
             The full picture on every patient - on one screen.
           </h2>
           <p className="text-lg text-slate-500 leading-relaxed">
@@ -27,7 +30,7 @@ export const PlatformInAction = () => {
               />
             </div>
             <div className="mt-4 flex items-center gap-3 px-2">
-              <span className="px-2 py-1 rounded bg-blue-100 text-blue-700 text-xs font-bold tracking-wider uppercase">Live in Prysm</span>
+              <span className="px-2 py-1 rounded bg-accent-soft text-accent-strong text-xs font-bold tracking-wider uppercase">Live in Prysm</span>
               <span className="text-sm text-slate-500 font-medium">The fundraising workspace - live, inside Salesforce.</span>
             </div>
           </div>
@@ -36,34 +39,34 @@ export const PlatformInAction = () => {
           <div className="w-full lg:w-2/5 space-y-6">
             
             {/* Step 1 */}
-            <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-start gap-5 hover:border-blue-300 transition-colors">
-              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+            <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-start gap-5 hover:border-accent/40 transition-colors">
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-accent-strong flex items-center justify-center text-white font-bold text-lg shadow-sm">
                 01
               </div>
               <div>
-                <h3 className="text-lg font-bold text-indigo-950 mb-1">Assigned Patients</h3>
+                <h3 className="text-lg font-bold text-ink mb-1">Assigned Patients</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">A prioritized daily call list - the right patients, ranked.</p>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-start gap-5 hover:border-blue-300 transition-colors">
-              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-500 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+            <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-start gap-5 hover:border-accent/40 transition-colors">
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-accent flex items-center justify-center text-white font-bold text-lg shadow-sm">
                 02
               </div>
               <div>
-                <h3 className="text-lg font-bold text-indigo-950 mb-1">Patient Record</h3>
+                <h3 className="text-lg font-bold text-ink mb-1">Patient Record</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">Capacity range, model score, and full visit history on one screen.</p>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-start gap-5 hover:border-blue-300 transition-colors">
-              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+            <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-start gap-5 hover:border-accent/40 transition-colors">
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-accent-strong flex items-center justify-center text-white font-bold text-lg shadow-sm">
                 03
               </div>
               <div>
-                <h3 className="text-lg font-bold text-indigo-950 mb-1">Integrated Calling</h3>
+                <h3 className="text-lg font-bold text-ink mb-1">Integrated Calling</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">Place calls and log notes without leaving the workspace.</p>
               </div>
             </div>

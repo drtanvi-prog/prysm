@@ -29,29 +29,29 @@ export const PlatformCaseStudy = () => {
               className="w-full flex flex-col gap-[2px] overflow-hidden" 
               style={{ clipPath: 'polygon(0 0, 100% 0, 55% 100%, 45% 100%)' }}
             >
-              <div className="bg-[#2D4A9B] text-white text-xs font-bold py-4 text-center">
+              <div className="bg-accent-strong text-white text-xs font-bold py-4 text-center">
                 204,543 Patients
               </div>
-              <div className="bg-[#4466B3] text-white text-xs font-bold py-4 text-center">
+              <div className="bg-accent text-white text-xs font-bold py-4 text-center">
                 1,387 Referrals
               </div>
-              <div className="bg-[#5C82CB] text-white text-xs font-bold py-4 text-center">
+              <div className="bg-accent/80 text-white text-xs font-bold py-4 text-center">
                 <div className="mb-1">4161 Attempts /</div>
                 <div>146 Discovery Visits</div>
               </div>
-              <div className="bg-[#759FE4] text-white text-xs font-bold py-4 text-center">
+              <div className="bg-accent/60 text-white text-xs font-bold py-4 text-center">
                 <div className="mb-1">41 Qualified Major</div>
                 <div>Gift Prospects</div>
               </div>
-              <div className="bg-[#8EBCFC] text-white text-xs font-bold py-4 text-center">
+              <div className="bg-accent-soft text-ink text-xs font-bold py-4 text-center">
                 8 Gifts
               </div>
             </div>
             
             {/* Arrow & Total */}
             <div className="mt-2 text-center">
-              <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-[#8EBCFC] mx-auto mb-2"></div>
-              <div className="text-xl font-bold text-[#2D4A9B]">Totaling 1.8M</div>
+              <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-accent-soft mx-auto mb-2"></div>
+              <div className="text-xl font-bold text-accent-strong">Totaling 1.8M</div>
             </div>
           </div>
         </div>
@@ -65,8 +65,8 @@ export const PlatformCaseStudy = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             {/* System 1 */}
-            <div className="bg-slate-100 relative pt-12 pb-8 px-8">
-              <div className="absolute top-0 left-4 bg-[#2D4A9B] text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-wider">
+            <div className="bg-slate-50 relative pt-12 pb-8 px-8 border border-slate-200 rounded-xl">
+              <div className="absolute top-0 left-4 bg-accent-strong text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-wider">
                 Health System 1
               </div>
               <div className="text-3xl font-bold text-slate-800 mb-8">$42,908</div>
@@ -78,8 +78,8 @@ export const PlatformCaseStudy = () => {
             </div>
             
             {/* System 2 */}
-            <div className="bg-slate-100 relative pt-12 pb-8 px-8">
-              <div className="absolute top-0 left-4 bg-[#2D4A9B] text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-wider">
+            <div className="bg-slate-50 relative pt-12 pb-8 px-8 border border-slate-200 rounded-xl">
+              <div className="absolute top-0 left-4 bg-accent-strong text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-wider">
                 Health System 2
               </div>
               <div className="text-3xl font-bold text-slate-800 mb-8">$62,000</div>
@@ -91,8 +91,8 @@ export const PlatformCaseStudy = () => {
             </div>
             
             {/* System 3 */}
-            <div className="bg-slate-100 relative pt-12 pb-8 px-8">
-              <div className="absolute top-0 left-4 bg-[#2D4A9B] text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-wider">
+            <div className="bg-slate-50 relative pt-12 pb-8 px-8 border-2 border-accent rounded-xl">
+              <div className="absolute top-0 left-4 bg-accent text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-wider">
                 Health System 3
               </div>
               <div className="text-3xl font-bold text-slate-800 mb-8">$516,000</div>

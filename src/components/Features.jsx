@@ -11,11 +11,14 @@ export const Features = () => {
   ];
 
   return (
-    <section className="py-32 bg-white border-t border-slate-100">
+    <section className="py-24 sm:py-32 bg-white border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <div className="text-sm font-semibold tracking-wide text-blue-600 uppercase mb-3">What Prysm Does</div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-indigo-950 max-w-2xl">
+          <div className="flex items-center gap-3 mb-5">
+            <span className="hairline"></span>
+            <span className="eyebrow">What Prysm Does</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-ink max-w-2xl">
             Everything your team needs to grow grateful patient giving.
           </h2>
           <p className="mt-4 text-lg text-slate-500 max-w-3xl">
@@ -25,31 +28,31 @@ export const Features = () => {
 
         {/* Value Props Row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
-          <div className="bg-slate-50 p-10 rounded-2xl border border-slate-200 shadow-sm">
-            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-4">For the team</div>
-            <h3 className="text-2xl font-bold mb-4 text-indigo-950">Insight</h3>
+          <div className="bg-slate-50 p-10 rounded-2xl border border-slate-200">
+            <div className="text-xs font-bold tracking-wider text-accent-strong uppercase mb-4">For the team</div>
+            <h3 className="text-2xl font-bold mb-4 text-ink">Insight</h3>
             <p className="text-slate-500 text-sm leading-relaxed">Shared visibility for everyone in the program - from the development officer making calls to the Chief Development Officer briefing the board.</p>
           </div>
-          <div className="bg-white p-10 rounded-2xl border-2 border-indigo-900 shadow-sm">
-            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-4">For the day's work</div>
-            <h3 className="text-2xl font-bold mb-4 text-indigo-950">Efficiency</h3>
-            <p className="text-slate-500 text-sm leading-relaxed">Time-consuming work - list-building, screening, call logging, hand-offs - is handled in the background, so fundraisers can focus on donor relationships.</p>
+          <div className="bg-ink p-10 rounded-2xl shadow-md">
+            <div className="text-xs font-bold tracking-wider text-accent-soft uppercase mb-4">For the day's work</div>
+            <h3 className="text-2xl font-bold mb-4 text-white">Efficiency</h3>
+            <p className="text-slate-300 text-sm leading-relaxed">Time-consuming work - list-building, screening, call logging, hand-offs - is handled in the background, so fundraisers can focus on donor relationships.</p>
           </div>
-          <div className="bg-slate-50 p-10 rounded-2xl border border-slate-200 shadow-sm">
-            <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-4">For the program</div>
-            <h3 className="text-2xl font-bold mb-4 text-indigo-950">Partnership</h3>
+          <div className="bg-slate-50 p-10 rounded-2xl border border-slate-200">
+            <div className="text-xs font-bold tracking-wider text-accent-strong uppercase mb-4">For the program</div>
+            <h3 className="text-2xl font-bold mb-4 text-ink">Partnership</h3>
             <p className="text-slate-500 text-sm leading-relaxed">Fundraisers, physicians, and foundation leadership working from the same patient view - as a coordinated team, with the right information for each role.</p>
           </div>
         </div>
 
         {/* Capabilities Grid */}
         <div>
-          <h4 className="text-sm font-semibold tracking-wide text-slate-400 uppercase mb-6">Program Capabilities</h4>
+          <h4 className="text-xs font-semibold tracking-[0.18em] text-slate-500 uppercase mb-6">Program Capabilities</h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {capabilities.map((cap, i) => (
-              <div key={i} className="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-200 group">
-                <div className="text-slate-300 font-mono text-sm mb-4 font-semibold group-hover:text-blue-500 transition-colors">{cap.num}</div>
-                <h5 className="font-bold text-indigo-950 mb-2">{cap.title}</h5>
+              <div key={i} className="bg-white p-6 rounded-xl border border-slate-200 hover:border-accent/50 hover:shadow-md transition-all duration-200 group">
+                <div className="text-slate-400 font-mono text-sm mb-4 font-semibold group-hover:text-accent transition-colors">{cap.num}</div>
+                <h5 className="font-bold text-ink mb-2">{cap.title}</h5>
                 <p className="text-sm text-slate-500 leading-relaxed">{cap.desc}</p>
               </div>
             ))}
