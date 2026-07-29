@@ -1,6 +1,6 @@
 import providenceLogo from '../assets/integration/providence-health-services.svg';
 import cityOfHopeLogo from '../assets/integration/city-of-hope-logo-vector.png';
-import lsuHealthLogo from '../assets/integration/lsu-health-sciences-center-new-orleans-logo-brand-product-design-png-favpng-MQGePmn6RGsC2b3fhkBN0HJmC.jpg';
+import lsuHealthLogo from '../assets/integration/lsu-health-sciences-center-new-orleans-logo-brand-product-design-png-favpng-MQGePmn6RGsC2b3fhkBN0HJmC.png';
 import rutgersLogo from '../assets/integration/Rutgers-Health-Lockup_Horizontal_Red-and-Black_RGB.svg';
 
 export const Hero = () => {
