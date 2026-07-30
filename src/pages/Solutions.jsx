@@ -18,12 +18,12 @@ export const Solutions = () => {
       />
 
       {/* Solutions Grid */}
-      <section className="py-24 sm:py-32">
+      <section className="py-16 md:py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
             {/* Fundraisers */}
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-10 shadow-sm flex flex-col h-full">
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-10 shadow-sm flex flex-col h-full">
               <div className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Frontline</div>
               <h3 className="text-2xl font-bold text-ink mb-6">Fundraisers</h3>
               <ul className="space-y-4 mb-8 flex-grow">
@@ -46,7 +46,7 @@ export const Solutions = () => {
             </div>
 
             {/* Prospect Research */}
-            <div className="bg-ink rounded-2xl p-10 shadow-md flex flex-col h-full">
+            <div className="bg-ink rounded-xl p-10 shadow-md flex flex-col h-full">
               <div className="text-xs font-bold uppercase tracking-wider text-accent-soft mb-2">Advancement Services</div>
               <h3 className="text-2xl font-bold text-white mb-6">Prospect Research</h3>
               <ul className="space-y-4 mb-8 flex-grow">
@@ -69,7 +69,7 @@ export const Solutions = () => {
             </div>
 
             {/* Leadership */}
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-10 shadow-sm flex flex-col h-full">
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-10 shadow-sm flex flex-col h-full">
               <div className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Philanthropy Leadership</div>
               <h3 className="text-2xl font-bold text-ink mb-6">Chief Development Officers</h3>
               <ul className="space-y-4 mb-8 flex-grow">
@@ -95,10 +95,10 @@ export const Solutions = () => {
       </section>
 
       {/* Clinician Partnership with 8-Step Workflow */}
-      <section className="py-24 sm:py-32 bg-slate-50 border-t border-slate-200">
+      <section className="py-16 md:py-24 lg:py-32 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="text-center max-w-3xl mx-auto mb-20">
+          <div className="text-center max-w-3xl mx-auto mb-12 md:mb-20">
             <div className="flex items-center justify-center gap-3 mb-5">
               <span className="hairline"></span>
               <span className="eyebrow">Clinician Partnership</span>
@@ -112,10 +112,10 @@ export const Solutions = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
             {/* Left: The 8-Step Workflow */}
-            <div className="bg-white p-10 rounded-2xl border border-slate-200 shadow-md">
+            <div className="bg-white p-10 rounded-xl border border-slate-200 shadow-md">
               <h3 className="text-xl font-bold text-ink mb-8 border-b border-slate-200 pb-4">The 8-Step Physician Workflow</h3>
 
               <div className="space-y-6">

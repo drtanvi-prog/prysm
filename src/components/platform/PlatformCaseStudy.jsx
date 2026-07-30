@@ -2,11 +2,11 @@ import prysmIconDark from '../../assets/icons/prysm-icon-dark.svg';
 
 export const PlatformCaseStudy = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Case Study Header & Funnel */}
-        <div className="flex flex-col md:flex-row gap-16 items-center mb-32">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center mb-12 md:mb-24">
           <div className="flex-1">
             <h2 className="text-2xl sm:text-3xl font-light text-slate-800 mb-2">Case Study: Major</h2>
             <h2 className="text-2xl sm:text-3xl font-light text-slate-800 mb-8">Academic Medical Center</h2>
@@ -58,7 +58,7 @@ export const PlatformCaseStudy = () => {
 
         {/* Benchmarks Section */}
         <div className="pt-8">
-          <h2 className="text-xl font-light text-slate-800 mb-16 text-center">
+          <h2 className="text-xl font-light text-slate-800 mb-8 md:mb-16 text-center">
             Average $ Amount Raised <span className="font-semibold">per Major Gift Officer</span>
           </h2>
           

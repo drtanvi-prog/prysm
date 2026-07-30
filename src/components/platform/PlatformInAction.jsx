@@ -1,6 +1,6 @@
 export const PlatformInAction = () => {
   return (
-    <section className="py-24 lg:py-32 bg-slate-50 border-t border-slate-200">
+    <section className="py-16 md:py-24 lg:py-32 bg-slate-50 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -22,7 +22,7 @@ export const PlatformInAction = () => {
           
           {/* Left Side - Image */}
           <div className="w-full lg:w-3/5">
-            <div className="bg-white p-2 rounded-2xl shadow-xl border border-slate-200">
+            <div className="bg-white p-2 rounded-xl shadow-xl border border-slate-200">
               <img 
                 src="/image.png" 
                 alt="Prysm Dashboard UI" 

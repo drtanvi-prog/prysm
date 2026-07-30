@@ -64,7 +64,7 @@ export const HowItWorks = () => {
                 className={`pb-4 flex-shrink-0 lg:flex-1 text-left px-2 border-b-2 transition-colors cursor-pointer min-w-[140px] ${
                   activeStep === index 
                     ? 'border-accent text-slate-900 font-semibold' 
-                    : 'border-transparent text-slate-400 hover:text-slate-600 hover:border-slate-300'
+                     : 'border-transparent text-slate-400 hover:text-slate-600 hover:border-slate-300'
                 }`}
               >
                 <div className="text-xs font-bold uppercase tracking-wider mb-1">{step.step}</div>
@@ -93,17 +93,44 @@ export const HowItWorks = () => {
         </div>
 
         {/* Comparison Boxes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm">
-            <h4 className="text-xl font-bold text-ink mb-3">AI tools</h4>
-            <p className="text-slate-500 text-sm leading-relaxed">surface prospects - but can't manage the clinician partnership.</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Card 1: AI Tools */}
+          <div className="bg-white border border-slate-200/80 p-8 rounded-xl flex flex-col justify-between hover:border-slate-300 transition-colors duration-200">
+            <div>
+              <h4 className="text-lg font-bold text-ink mb-3">AI tools</h4>
+              <p className="text-slate-500 text-sm leading-relaxed mb-4">
+                Surface prospects effectively, but lack the workflow capabilities needed to manage clinician partnerships.
+              </p>
+            </div>
+            <div className="text-[10px] font-bold tracking-wider text-slate-400 uppercase">
+              Point Solution
+            </div>
           </div>
-          <div className="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm">
-            <h4 className="text-xl font-bold text-ink mb-3">Donor CRMs</h4>
-            <p className="text-slate-500 text-sm leading-relaxed">hold the data - but never report results back.</p>
+
+          {/* Card 2: Donor CRMs */}
+          <div className="bg-white border border-slate-200/80 p-8 rounded-xl flex flex-col justify-between hover:border-slate-300 transition-colors duration-200">
+            <div>
+              <h4 className="text-lg font-bold text-ink mb-3">Donor CRMs</h4>
+              <p className="text-slate-500 text-sm leading-relaxed mb-4">
+                Hold and secure donor data, but fail to report results or engagement impact back to the medical staff.
+              </p>
+            </div>
+            <div className="text-[10px] font-bold tracking-wider text-slate-400 uppercase">
+              System of Record
+            </div>
           </div>
-          <div className="bg-ink px-6 py-10 sm:p-10 rounded-2xl shadow-sm flex items-center justify-center sm:justify-start">
-            <h4 className="text-2xl font-bold text-white">Only Prysm does both.</h4>
+
+          {/* Card 3: Prysm */}
+          <div className="bg-ink p-8 rounded-xl flex flex-col justify-between relative overflow-hidden group">
+            <div>
+              <h4 className="text-lg font-bold text-white mb-3">Prysm</h4>
+              <p className="text-indigo-200/90 text-sm leading-relaxed mb-4">
+                Bridges the gap by surfacing clinical prospects and closing the loop with automated outcome reporting.
+              </p>
+            </div>
+            <div className="text-xs font-bold uppercase tracking-wider text-white pt-4 border-t border-white/20">
+              Only Prysm does both.
+            </div>
           </div>
         </div>
 

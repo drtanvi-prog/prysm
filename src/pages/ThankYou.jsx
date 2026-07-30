@@ -9,7 +9,7 @@ export const ThankYou = () => {
 
   return (
     <div className="bg-slate-50 min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-16">
-      <div className="max-w-md w-full bg-white rounded-2xl border border-slate-200 p-8 sm:p-12 text-center shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
+      <div className="max-w-md w-full bg-white rounded-xl border border-slate-200 p-8 sm:p-12 text-center shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
         
         {/* Success Icon */}
         <div className="mx-auto w-16 h-16 bg-accent-soft rounded-full flex items-center justify-center mb-6">

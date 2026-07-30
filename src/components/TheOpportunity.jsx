@@ -25,7 +25,7 @@ export const TheOpportunity = () => {
           </div>
 
           {/* Right Column: The Challenges Summary */}
-          <div className="bg-white rounded-2xl p-8 sm:p-10 border border-slate-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 relative group">
+          <div className="bg-white rounded-xl p-8 sm:p-10 border border-slate-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 relative group">
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-accent to-accent-strong rounded-t-2xl"></div>
             <div className="text-xs font-bold tracking-wider text-slate-400 uppercase mb-3">Why Most Programs Miss It</div>
             <h3 className="text-2xl font-bold text-ink mb-8">Five challenges stand in the way.</h3>

@@ -10,9 +10,9 @@ export const Results = () => {
   ];
 
   return (
-    <section className="pt-16 pb-20 sm:pt-24 sm:pb-28 lg:pt-32 lg:pb-36 bg-white relative">
+    <section className="py-16 md:py-24 lg:py-32 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
 
           {/* Story Column */}
           <div className="lg:col-span-5">
@@ -42,7 +42,7 @@ export const Results = () => {
 
           {/* Metrics Grid */}
           <div className="lg:col-span-7">
-            <div className="grid grid-cols-1 sm:grid-cols-2 border border-slate-100 rounded-t-2xl overflow-hidden divide-y sm:divide-y-0 sm:divide-x divide-slate-100 bg-white">
+            <div className="grid grid-cols-1 sm:grid-cols-2 border border-slate-100 rounded-t-xl overflow-hidden divide-y sm:divide-y-0 sm:divide-x divide-slate-100 bg-white">
               {/* Row 1 */}
               <div className="flex flex-col justify-between p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors">
                 <div className="text-5xl font-light text-ink tracking-tight">{metrics[0].value}</div>
@@ -79,7 +79,7 @@ export const Results = () => {
             </div>
 
             {/* Featured Row 4 */}
-            <div className="border-x border-b border-slate-100 rounded-b-2xl overflow-hidden bg-slate-50/30 p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between hover:bg-slate-50/70 transition-colors">
+            <div className="border-x border-b border-slate-100 rounded-b-xl overflow-hidden bg-slate-50/30 p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between hover:bg-slate-50/70 transition-colors">
               <div className="text-6xl font-extrabold text-accent tracking-tight">{metrics[6].value}</div>
               <div className="text-sm font-medium text-slate-600 leading-relaxed max-w-md sm:text-right sm:ml-auto">
                 {metrics[6].label}
@@ -89,10 +89,10 @@ export const Results = () => {
         </div>
 
         {/* Testimonial */}
-        <div className="mt-24 border-t border-slate-100 pt-16 relative overflow-hidden">
+        <div className="mt-12 md:mt-24 border-t border-slate-100 pt-12 md:pt-16 relative overflow-hidden">
           <div className="relative z-10 max-w-4xl mx-auto text-center">
             <span className="text-6xl text-accent-soft font-serif leading-none block mb-4">“</span>
-            <p className="text-2xl sm:text-3xl font-light text-slate-900 leading-relaxed mb-8">
+            <p className="text-xl sm:text-3xl font-light text-slate-900 leading-relaxed mb-6 md:mb-8">
               Prysm gives us real-time visibility into who we haven't reached yet and keeps us on our best opportunities - actionable analytics our donor management system simply can't provide.
             </p>
             <div>

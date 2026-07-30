@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import providenceLogo from '../assets/integration/providence-health-services.svg';
 import cityOfHopeLogo from '../assets/integration/city-of-hope-logo-vector.png';
 import lsuHealthLogo from '../assets/integration/lsu-health-sciences-center-new-orleans-logo-brand-product-design-png-favpng-MQGePmn6RGsC2b3fhkBN0HJmC.png';
@@ -23,18 +24,18 @@ export const Hero = () => {
               Prysm connects clinicians, patients, and fundraisers on a single platform - turning clinical encounters into qualified major gifts, without asking your teams to change how they already work.
             </p>
             <div className="flex flex-wrap gap-3 sm:gap-4">
-              <button className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-ink text-white font-medium hover:bg-ink-soft transition-all hover:-translate-y-0.5 hover:shadow-md shadow-sm cursor-pointer text-sm sm:text-base">
+              <Link to="/contact" className="inline-flex items-center justify-center px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-ink text-white font-medium hover:bg-ink-soft transition-all hover:-translate-y-0.5 hover:shadow-md shadow-sm cursor-pointer text-sm sm:text-base">
                 Request Demo
-              </button>
-              <button className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-white border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 hover:border-slate-400 transition-all hover:-translate-y-0.5 cursor-pointer text-sm sm:text-base">
+              </Link>
+              <Link to="/platform" className="inline-flex items-center justify-center px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-white border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 hover:border-slate-400 transition-all hover:-translate-y-0.5 cursor-pointer text-sm sm:text-base">
                 Explore the Platform
-              </button>
+              </Link>
             </div>
           </div>
 
           {/* Signature visual: EMR -> Prysm -> CRM bridge (not a dashboard screenshot) */}
           <div className="relative mt-4 lg:mt-0">
-            <div className="relative rounded-2xl bg-white border border-slate-200 shadow-lg p-6 sm:p-8 lg:p-10">
+            <div className="relative rounded-xl bg-white border border-slate-200 shadow-lg p-6 sm:p-8 lg:p-10">
 
               <div className="flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-2">
 

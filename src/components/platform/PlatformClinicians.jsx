@@ -15,7 +15,7 @@ export const PlatformClinicians = () => {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-white border-t border-slate-200">
+    <section className="py-16 md:py-24 lg:py-32 bg-white border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -37,7 +37,7 @@ export const PlatformClinicians = () => {
           
           {/* Left Side - Image */}
           <div className="w-full lg:w-1/2">
-            <div className="bg-slate-900 p-2 rounded-2xl shadow-2xl border border-slate-800">
+            <div className="bg-slate-900 p-2 rounded-xl shadow-xl border border-slate-800">
               <img 
                 src="/clinical-patient-enagament.png" 
                 alt="Prysm Clinician Dashboard UI" 

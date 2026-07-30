@@ -9,6 +9,7 @@ import { Solutions } from './pages/Solutions'
 import { Results } from './pages/Results'
 import { Security } from './pages/Security'
 import { ThankYou } from './pages/ThankYou'
+import { NotFound } from './pages/NotFound'
 import { ScrollToTop } from './components/ScrollToTop'
 
 function AppContent() {
@@ -25,9 +26,10 @@ function AppContent() {
           <Route path="/platform" element={<Platform />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/results" element={<Results />} />
-          <Route path="/security" element={<Security />} />
+          {/* <Route path="/security" element={<Security />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       {!isThankYouPage && <Footer />}

@@ -43,7 +43,7 @@ export const TheChallenges = () => {
           {challenges.map((challenge, index) => (
             <div 
               key={index} 
-              className="bg-slate-50/50 p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-accent/30 hover:bg-white hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group"
+              className="bg-slate-50/50 p-8 rounded-xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-accent/30 hover:bg-white hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group"
             >
               <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-accent font-bold text-sm mb-6 flex items-center justify-center shadow-sm group-hover:bg-accent group-hover:text-white group-hover:border-accent transition-all duration-300">
                 {index + 1}
@@ -53,7 +53,7 @@ export const TheChallenges = () => {
             </div>
           ))}
 
-          <div className="bg-gradient-to-br from-ink to-ink-dim p-8 rounded-2xl border border-ink-soft shadow-lg flex flex-col h-full justify-center items-center text-center relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div className="bg-gradient-to-br from-ink to-ink-dim p-8 rounded-xl border border-ink-soft shadow-lg flex flex-col h-full justify-center items-center text-center relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
             <div className="absolute -right-6 -bottom-6 w-20 h-20 rounded-full bg-accent/10 blur-lg group-hover:bg-accent/20 transition-all duration-300"></div>
             <h3 className="text-xl font-bold text-white mb-3 relative z-10">The Cost of Inaction</h3>
             <p className="text-slate-300 text-sm leading-relaxed relative z-10">Every day these challenges persist is another missed opportunity to connect with a grateful patient.</p>

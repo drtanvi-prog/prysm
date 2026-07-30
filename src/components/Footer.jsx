@@ -24,7 +24,7 @@ export const Footer = () => {
               <li><Link to="/platform" className="text-slate-400 hover:text-white transition-colors">Platform</Link></li>
               <li><Link to="/solutions" className="text-slate-400 hover:text-white transition-colors">Solutions</Link></li>
               <li><Link to="/results" className="text-slate-400 hover:text-white transition-colors">Results &amp; Case Studies</Link></li>
-              <li><Link to="/security" className="text-slate-400 hover:text-white transition-colors">Security &amp; Compliance</Link></li>
+              {/* <li><Link to="/security" className="text-slate-400 hover:text-white transition-colors">Security &amp; Compliance</Link></li> */}
             </ul>
           </div>
 

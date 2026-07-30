@@ -9,11 +9,11 @@ export const PageHeader = ({ label, title, subtitle }) => {
             <span className="hairline"></span>
           </div>
         )}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-ink tracking-tight leading-tight mb-6 max-w-4xl mx-auto">
+        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-ink tracking-tight leading-tight mb-6 max-w-4xl mx-auto">
           {title}
         </h1>
         {subtitle && (
-          <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed">
             {subtitle}
           </p>
         )}

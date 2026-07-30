@@ -26,7 +26,7 @@ export const PlatformPipeline = () => {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-slate-50 border-t border-slate-200">
+    <section className="py-16 md:py-24 lg:py-32 bg-slate-50 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

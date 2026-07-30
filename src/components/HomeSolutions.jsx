@@ -47,7 +47,7 @@ export const HomeSolutions = () => {
           </div>
 
           {/* Right Side Visual Block */}
-          <div className="bg-white p-8 sm:p-10 rounded-[1.75rem] border border-slate-200 shadow-xl relative overflow-hidden">
+          <div className="bg-white p-8 sm:p-10 rounded-xl border border-slate-200 shadow-xl relative overflow-hidden">
             <div className="space-y-5 relative z-10">
               <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center justify-between">
                 <div className="flex items-center gap-3">

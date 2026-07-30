@@ -45,9 +45,9 @@ export const Header = () => {
 
                 {/* Right Side Actions */}
                 <div className="hidden md:flex items-center gap-4">
-                    <Link to="/security" className="text-[15px] font-medium text-slate-500 hover:text-ink transition-colors">
+                    {/* <Link to="/security" className="text-[15px] font-medium text-slate-500 hover:text-ink transition-colors">
                         Security
-                    </Link>
+                    </Link> */}
                     <Link to="/contact" className="bg-ink hover:bg-ink-soft text-white px-5 py-2.5 rounded-full text-sm font-medium transition-colors shadow-sm">
                         Request Demo
                     </Link>
@@ -78,7 +78,7 @@ export const Header = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-white border-b border-slate-200">
                     <div className="px-4 pt-2 pb-6 space-y-1 shadow-lg">
-                        {[...navLinks, { title: "Security", href: "/security" }].map((link) => {
+                        {navLinks.map((link) => {
                             const isActive = location.pathname.startsWith(link.href)
                             return (
                             <Link
