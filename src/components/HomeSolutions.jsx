@@ -37,17 +37,17 @@ export const HomeSolutions = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/platform" className="bg-ink hover:bg-ink-soft text-white px-6 py-3 rounded-full text-base font-medium transition-colors shadow-sm text-center">
+              <Link to="/platform" className="bg-ink hover:bg-ink-soft text-white px-6 py-3 rounded-lg text-base font-medium transition-colors shadow-sm text-center">
                 Explore the Platform
               </Link>
-              <Link to="/solutions" className="bg-transparent hover:bg-slate-50 text-ink border border-slate-300 px-6 py-3 rounded-full text-base font-medium transition-colors text-center">
+              <Link to="/solutions" className="bg-transparent hover:bg-slate-50 text-ink border border-slate-300 px-6 py-3 rounded-lg text-base font-medium transition-colors text-center">
                 See Role-Based Views
               </Link>
             </div>
           </div>
 
           {/* Right Side Visual Block */}
-          <div className="bg-white p-8 sm:p-10 rounded-xl border border-slate-200 shadow-xl relative overflow-hidden">
+          <div className="bg-white p-8 sm:p-10 rounded-md border border-slate-200 shadow-xl relative overflow-hidden">
             <div className="space-y-5 relative z-10">
               <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center justify-between">
                 <div className="flex items-center gap-3">

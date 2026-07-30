@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand Col */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center gap-2 mb-6 brightness-0 invert opacity-90">
+            <div className="flex items-center gap-2 mb-6 text-white">
               <Logo />
             </div>
             <p className="text-slate-300 text-sm max-w-sm leading-relaxed">

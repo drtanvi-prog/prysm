@@ -28,13 +28,13 @@ export const CTA = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Link
               to="/contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-ink hover:bg-ink-soft text-white font-medium px-8 py-4 rounded-xl transition-all shadow-sm text-base cursor-pointer"
+              className="w-full sm:w-auto inline-flex items-center justify-center bg-ink hover:bg-ink-soft text-white font-medium px-8 py-4 rounded-lg transition-all shadow-sm text-base cursor-pointer"
             >
               Request a Demo
             </Link>
             <a
               href="mailto:sales@actionableinsightai.com"
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-white border border-slate-200 text-slate-600 hover:text-ink hover:bg-slate-50 font-medium px-8 py-4 rounded-xl transition-all text-base"
+              className="w-full sm:w-auto inline-flex items-center justify-center bg-white border border-slate-200 text-slate-600 hover:text-ink hover:bg-slate-50 font-medium px-8 py-4 rounded-lg transition-all text-base"
             >
               sales@actionableinsightai.com
             </a>
