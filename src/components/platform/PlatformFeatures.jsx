@@ -76,7 +76,7 @@ export const PlatformFeatures = () => {
             </h2>
           </div>
           <div className="flex-1">
-            <img src="/integrations.33d1002d.webp" alt="Prysm Integrations Funnel" className="w-full max-w-md mx-auto" />
+            <img src="/screenshots/integrations.33d1002d.webp" alt="Prysm Integrations Funnel" className="w-full max-w-md mx-auto" />
           </div>
         </div>
 
@@ -120,7 +120,7 @@ export const PlatformFeatures = () => {
         {/* Real Time Analytics Split */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center flex-col-reverse lg:flex-row-reverse max-w-6xl mx-auto mb-32">
           <div className="flex justify-center">
-             <img src="/analyze.85553684.webp" alt="Prysm Real-Time Analytics" className="max-w-full h-auto drop-shadow-xl" />
+             <img src="/screenshots/analyze.85553684.webp" alt="Prysm Real-Time Analytics" className="max-w-full h-auto drop-shadow-xl" />
           </div>
           <div>
             <h2 className="text-2xl sm:text-3xl font-light text-slate-800 leading-relaxed">
@@ -145,7 +145,7 @@ export const PlatformFeatures = () => {
             </div>
           </div>
           <div className="flex justify-center">
-             <img src="/phone.9ac62520.jpg" alt="Prysm Mobile App" className="max-w-md w-full h-auto drop-shadow-xl" />
+             <img src="/images/phone.9ac62520.jpg" alt="Prysm Mobile App" className="max-w-md w-full h-auto drop-shadow-xl" />
           </div>
         </div>
 

@@ -39,7 +39,7 @@ export const PlatformClinicians = () => {
           <div className="w-full lg:w-1/2">
             <div className="bg-slate-900 p-2 rounded-xl shadow-xl border border-slate-800">
               <img 
-                src="/clinical-patient-enagament.png" 
+                src="/screenshots/clinical-patient-enagament.png" 
                 alt="Prysm Clinician Dashboard UI" 
                 className="w-full h-auto rounded-xl object-cover"
               />

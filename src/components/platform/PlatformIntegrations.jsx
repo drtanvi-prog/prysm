@@ -1,4 +1,4 @@
-import epicLogo from '../../assets/epic-systems.png';
+import epicLogo from '../../assets/integration/epic-systems.png';
 import cernerLogo from '../../assets/integration/Oracle_Cerner_logo.svg.webp';
 import salesforceLogo from '../../assets/integration/Salesforce.com_logo.svg.webp';
 import blackbaudLogo from '../../assets/integration/blackbaud-vector-logo.png';

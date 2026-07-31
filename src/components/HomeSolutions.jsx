@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import prysmIcon from '../assets/icons/prysm-icon-dark.svg'
 
 export const HomeSolutions = () => {
   return (
@@ -11,6 +12,7 @@ export const HomeSolutions = () => {
             <div className="flex items-center gap-3 mb-5">
               <span className="hairline"></span>
               <span className="eyebrow">The Solution</span>
+              <span className="hairline"></span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-6">
               The operational bridge between clinical care and philanthropy.
@@ -70,7 +72,16 @@ export const HomeSolutions = () => {
 
               <div className="bg-ink p-4 rounded-xl border border-ink-soft shadow-md">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center text-white font-bold">P</div>
+                  <div className="w-10 h-10 bg-white rounded-lg border border-slate-200/80 flex items-center justify-center overflow-hidden">
+                    <div className="w-6 h-6 overflow-hidden flex items-center justify-start">
+                      <img 
+                        src={prysmIcon} 
+                        alt="Prysm" 
+                        className="h-full w-auto max-w-none object-cover" 
+                        style={{ objectPosition: 'left center' }}
+                      />
+                    </div>
+                  </div>
                   <div>
                     <div className="text-sm font-bold text-white">Prysm Engine</div>
                     <div className="text-xs text-slate-300">Salesforce Native</div>

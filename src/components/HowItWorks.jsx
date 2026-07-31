@@ -8,31 +8,31 @@ export const HowItWorks = () => {
       step: "Step 1",
       title: "Identify grateful patients",
       description: "Single click reporting and automated encounter analysis provides fundraisers with real time access to patients with greatest affinity and capacity.",
-      image: "/step-1.829c359c.svg"
+      image: "/illustrations/step-1.829c359c.svg"
     },
     {
       step: "Step 2",
       title: "Engage clinicians",
       description: "When clinicians are engaged in a process with analytically sound information and consistent follow up reporting, they are highly willing to partner with development.",
-      image: "/step-2.88960699.svg"
+      image: "/illustrations/step-2.88960699.svg"
     },
     {
       step: "Step 3",
       title: "Qualify prospects",
       description: "Intuitive in-platform phone call and email tracking enables fundraisers to efficiently record discovery activity.",
-      image: "/step-3.57f5e397.svg"
+      image: "/illustrations/step-3.57f5e397.svg"
     },
     {
       step: "Step 4",
       title: "Hand off to your CRM",
       description: "Intuitive single click reporting enables fundraisers to view clinicians’ patients using a scoring model that combines affinity and capacity.",
-      image: "/step-4_1.b7da9f35.svg"
+      image: "/illustrations/step-4_1.b7da9f35.svg"
     },
     {
       step: "Step 5",
       title: "Report impact back",
       description: "Easily track and record outcomes of discovery activity to optimize program strategy.",
-      image: "/step-5.ac1ea224.svg"
+      image: "/illustrations/step-5.ac1ea224.svg"
     }
   ]
 

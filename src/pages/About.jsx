@@ -10,7 +10,7 @@ export const About = () => {
     <div className="bg-white">
       <section 
         className="relative pt-16 pb-16 sm:py-28 lg:py-32 bg-cover bg-center flex flex-col justify-center min-h-[280px] sm:min-h-[380px]"
-        style={{ backgroundImage: "url('/about-banner1.53c600cf.jpg')" }}
+        style={{ backgroundImage: "url('/images/about-banner1.53c600cf.jpg')" }}
       >
         <div className="absolute inset-0 bg-ink/80"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

@@ -24,7 +24,7 @@ export const PlatformInAction = () => {
           <div className="w-full lg:w-3/5">
             <div className="bg-white p-2 rounded-xl shadow-xl border border-slate-200">
               <img 
-                src="/image.png" 
+                src="/screenshots/image.png" 
                 alt="Prysm Dashboard UI" 
                 className="w-full h-auto rounded-xl object-cover"
               />
