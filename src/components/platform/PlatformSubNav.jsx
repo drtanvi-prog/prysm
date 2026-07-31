@@ -42,7 +42,7 @@ export const PlatformSubNav = () => {
   }
 
   return (
-    <div className="sticky top-20 z-40 bg-white/90 backdrop-blur-sm border-b border-slate-200 shadow-sm">
+    <div className="sticky top-16 z-40 bg-white/90 backdrop-blur-sm border-b border-slate-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex gap-1 overflow-x-auto scrollbar-none py-3">
           {sections.map(({ id, label }) => (
