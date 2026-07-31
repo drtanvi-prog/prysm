@@ -23,10 +23,10 @@ export const Platform = () => {
             <span className="eyebrow">What Prysm Is</span>
             <span className="hairline"></span>
           </div>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-ink mb-6 tracking-tight leading-tight">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-ink mb-6 tracking-tight leading-tight">
             An enterprise application built natively on Salesforce.
           </h1>
-          <p className="text-base sm:text-lg text-slate-500 max-w-3xl mx-auto mb-12 md:mb-20 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-slate-500 max-w-3xl mx-auto mb-12 md:mb-20 leading-relaxed">
             Not a replacement for your system of record - the grateful-patient intelligence and engagement application that turns clinical encounters into qualified prospects, then hands them back to the CRM you operate.
           </p>
 

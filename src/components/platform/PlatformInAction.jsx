@@ -9,10 +9,10 @@ export const PlatformInAction = () => {
             <span className="hairline"></span>
             <span className="eyebrow">Prysm in Action</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6 leading-tight">
             The full picture on every patient - on one screen.
           </h2>
-          <p className="text-lg text-slate-500 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-slate-500 leading-relaxed">
             The right information in front of the right fundraiser at the right time - from the day's call list to the full patient record, personalized to the way they work.
           </p>
         </div>

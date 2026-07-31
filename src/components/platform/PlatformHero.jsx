@@ -69,7 +69,7 @@ export const PlatformHero = () => {
       {/* Interactive Tabs Section */}
       <section className="max-w-6xl mx-auto px-4 pb-32">
         {/* Tabs Header */}
-        <div className="flex overflow-x-auto lg:flex-wrap pb-4 lg:pb-0 gap-6 lg:gap-0 lg:justify-between border-b border-slate-200 mb-16 scrollbar-none">
+        <div className="flex overflow-x-auto lg:flex-wrap pb-0 gap-6 lg:gap-0 lg:justify-between border-b border-slate-200 mb-16 scrollbar-none">
           {steps.map((step, index) => (
             <button
               key={index}

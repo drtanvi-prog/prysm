@@ -44,44 +44,44 @@ export const Results = () => {
           <div className="lg:col-span-7">
             <div className="grid grid-cols-1 sm:grid-cols-2 border border-slate-100 rounded-t-xl overflow-hidden divide-y sm:divide-y-0 sm:divide-x divide-slate-100 bg-white">
               {/* Row 1 */}
-              <div className="flex flex-col justify-between p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors">
-                <div className="text-5xl font-light text-ink tracking-tight">{metrics[0].value}</div>
+              <div className="flex flex-col justify-between p-6 sm:p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors">
+                <div className="text-4xl sm:text-5xl font-light text-ink tracking-tight">{metrics[0].value}</div>
                 <div className="text-xs uppercase tracking-wider font-semibold text-slate-400 mt-4 leading-relaxed">{metrics[0].label}</div>
               </div>
-              <div className="flex flex-col justify-between p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors border-t sm:border-t-0">
-                <div className="text-5xl font-light text-ink tracking-tight">{metrics[1].value}</div>
+              <div className="flex flex-col justify-between p-6 sm:p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors border-t sm:border-t-0">
+                <div className="text-4xl sm:text-5xl font-light text-ink tracking-tight">{metrics[1].value}</div>
                 <div className="text-xs uppercase tracking-wider font-semibold text-slate-400 mt-4 leading-relaxed">{metrics[1].label}</div>
               </div>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 border-x border-b border-slate-100 divide-y sm:divide-y-0 sm:divide-x divide-slate-100 bg-white">
               {/* Row 2 */}
-              <div className="flex flex-col justify-between p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors">
-                <div className="text-5xl font-light text-ink tracking-tight">{metrics[2].value}</div>
+              <div className="flex flex-col justify-between p-6 sm:p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors">
+                <div className="text-4xl sm:text-5xl font-light text-ink tracking-tight">{metrics[2].value}</div>
                 <div className="text-xs uppercase tracking-wider font-semibold text-slate-400 mt-4 leading-relaxed">{metrics[2].label}</div>
               </div>
-              <div className="flex flex-col justify-between p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors border-t sm:border-t-0">
-                <div className="text-5xl font-light text-ink tracking-tight">{metrics[3].value}</div>
+              <div className="flex flex-col justify-between p-6 sm:p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors border-t sm:border-t-0">
+                <div className="text-4xl sm:text-5xl font-light text-ink tracking-tight">{metrics[3].value}</div>
                 <div className="text-xs uppercase tracking-wider font-semibold text-slate-400 mt-4 leading-relaxed">{metrics[3].label}</div>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 border-x border-b border-slate-100 divide-y sm:divide-y-0 sm:divide-x divide-slate-100 bg-white">
               {/* Row 3 */}
-              <div className="flex flex-col justify-between p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors">
-                <div className="text-5xl font-light text-ink tracking-tight">{metrics[4].value}</div>
+              <div className="flex flex-col justify-between p-6 sm:p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors">
+                <div className="text-4xl sm:text-5xl font-light text-ink tracking-tight">{metrics[4].value}</div>
                 <div className="text-xs uppercase tracking-wider font-semibold text-slate-400 mt-4 leading-relaxed">{metrics[4].label}</div>
               </div>
-              <div className="flex flex-col justify-between p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors border-t sm:border-t-0">
-                <div className="text-5xl font-light text-ink tracking-tight">{metrics[5].value}</div>
+              <div className="flex flex-col justify-between p-6 sm:p-8 min-h-[160px] hover:bg-slate-50/50 transition-colors border-t sm:border-t-0">
+                <div className="text-4xl sm:text-5xl font-light text-ink tracking-tight">{metrics[5].value}</div>
                 <div className="text-xs uppercase tracking-wider font-semibold text-slate-400 mt-4 leading-relaxed">{metrics[5].label}</div>
               </div>
             </div>
 
             {/* Featured Row 4 */}
-            <div className="border-x border-b border-slate-100 rounded-b-xl overflow-hidden bg-slate-50/30 p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between hover:bg-slate-50/70 transition-colors">
-              <div className="text-6xl font-extrabold text-accent tracking-tight">{metrics[6].value}</div>
-              <div className="text-sm font-medium text-slate-600 leading-relaxed max-w-md sm:text-right sm:ml-auto">
+            <div className="border-x border-b border-slate-100 rounded-b-xl overflow-hidden bg-slate-50/30 p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 justify-between hover:bg-slate-50/70 transition-colors">
+              <div className="text-5xl sm:text-6xl font-extrabold text-accent tracking-tight">{metrics[6].value}</div>
+              <div className="text-xs sm:text-sm font-medium text-slate-600 leading-relaxed max-w-md sm:text-right sm:ml-auto">
                 {metrics[6].label}
               </div>
             </div>
@@ -95,9 +95,11 @@ export const Results = () => {
             <p className="text-xl sm:text-3xl font-light text-slate-900 leading-relaxed mb-6 md:mb-8">
               Prysm gives us real-time visibility into who we haven't reached yet and keeps us on our best opportunities - actionable analytics our donor management system simply can't provide.
             </p>
-            <div>
-              <div className="text-ink font-bold text-lg">Greg Gissendanner</div>
-              <div className="text-slate-400 text-xs font-semibold uppercase tracking-wider mt-1">Associate Chief Philanthropy Officer, Providence Philanthropy, South Division</div>
+            <div className="px-4">
+              <div className="text-ink font-bold text-base sm:text-lg">Greg Gissendanner</div>
+              <div className="text-slate-400 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mt-1 leading-normal max-w-2xl mx-auto">
+                Associate Chief Philanthropy Officer, Providence Philanthropy, South Division
+              </div>
             </div>
           </div>
         </div>

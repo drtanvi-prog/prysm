@@ -19,10 +19,10 @@ export const About = () => {
               <span className="w-10 h-px bg-accent"></span>
               <span className="text-xs font-bold tracking-[0.18em] text-accent-soft uppercase">About Actionable Insight</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6">
               Your success is <span className="text-accent-soft font-semibold">our success.</span>
             </h1>
-            <p className="text-xl text-slate-200 leading-relaxed max-w-2xl">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-200 leading-relaxed max-w-2xl">
               Our mission is to advance global healthcare one client at a time. Efficiency without compromise.
             </p>
           </div>
@@ -36,7 +36,7 @@ export const About = () => {
             <span className="hairline"></span>
             <span className="eyebrow">Our Story</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-10">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-10">
             The next generation of grateful patient program development
           </h2>
 

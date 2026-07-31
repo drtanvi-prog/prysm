@@ -39,8 +39,8 @@ export const Contact = () => {
                   <span className="w-10 h-px bg-accent"></span>
                   <span className="text-xs font-bold tracking-[0.18em] text-accent-soft uppercase">The Next Step</span>
                 </div>
-                <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-white">See what's possible.</h1>
-                <p className="text-slate-300 text-lg mb-12 leading-relaxed">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white">See what's possible.</h1>
+                <p className="text-slate-300 text-sm sm:text-base md:text-lg mb-12 leading-relaxed">
                   We would welcome the opportunity to join you in a conversation about your grateful patient program - and to explore whether Prysm could be the right fit for where you want to take it.
                 </p>
 

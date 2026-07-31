@@ -31,10 +31,10 @@ export const TheChallenges = () => {
             <span className="eyebrow">The Problem</span>
             <span className="hairline"></span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6">
             Why the wealth transfer is being missed.
           </h2>
-          <p className="text-lg text-slate-500 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-slate-500 leading-relaxed">
             Despite the opportunity, hospital foundations are blocked by operational challenges that keep grateful patient programs from scaling.
           </p>
         </div>

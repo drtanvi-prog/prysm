@@ -10,12 +10,12 @@ export const TheOpportunity = () => {
               <span className="hairline"></span>
               <span className="eyebrow">The Opportunity</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-8">The great wealth transfer</h2>
-            <div className="text-7xl sm:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-ink via-accent to-accent-strong tracking-tight mb-2">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-8">The great wealth transfer</h2>
+            <div className="text-5xl xs:text-7xl sm:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-ink via-accent to-accent-strong tracking-tight mb-2">
               $124T
             </div>
             <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-8">Projected to transfer through 2048</p>
-            <p className="text-xl text-slate-700 leading-relaxed mb-6">
+            <p className="text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed mb-6">
               An estimated <strong className="font-semibold text-ink">$18 trillion</strong> of it will flow to charity - a generational opportunity for mission-aligned healthcare fundraising.
             </p>
             <div className="hairline mb-6"></div>

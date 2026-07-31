@@ -47,8 +47,8 @@ export const HowItWorks = () => {
             <span className="eyebrow">How it works</span>
             <span className="hairline"></span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-6">Prysm closes the loop every other system leaves open.</h2>
-          <p className="text-slate-500 text-lg">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6">Prysm closes the loop every other system leaves open.</h2>
+          <p className="text-sm sm:text-base md:text-lg text-slate-500">
             A repeatable engine for grateful patient philanthropy - where reporting impact back to clinicians is what earns the next referral.
           </p>
         </div>
@@ -56,7 +56,7 @@ export const HowItWorks = () => {
         {/* Interactive Tabs Layout */}
         <div className="mb-24">
           {/* Tabs Header */}
-          <div className="flex overflow-x-auto lg:flex-wrap pb-4 lg:pb-0 gap-6 lg:gap-0 lg:justify-between border-b border-slate-200 mb-12 scrollbar-none">
+          <div className="flex overflow-x-auto lg:flex-wrap pb-0 gap-6 lg:gap-0 lg:justify-between border-b border-slate-200 mb-12 scrollbar-none">
             {steps.map((step, index) => (
               <button
                 key={index}

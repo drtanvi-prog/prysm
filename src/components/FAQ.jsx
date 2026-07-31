@@ -35,8 +35,8 @@ export const FAQ = () => {
             <span className="eyebrow">Questions</span>
             <span className="hairline"></span>
           </div>
-          <h2 className="text-3xl font-bold text-ink mb-4">Frequently asked questions</h2>
-          <p className="text-slate-500">Everything you need to know about the product and implementation.</p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-ink mb-4">Frequently asked questions</h2>
+          <p className="text-sm sm:text-base text-slate-500">Everything you need to know about the product and implementation.</p>
         </div>
 
         <div className="space-y-3">

@@ -14,10 +14,10 @@ export const HomeSolutions = () => {
               <span className="eyebrow">The Solution</span>
               <span className="hairline"></span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6">
               The operational bridge between clinical care and philanthropy.
             </h2>
-            <p className="text-lg text-slate-500 mb-8 leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-slate-500 mb-8 leading-relaxed">
               Prysm is an enterprise application built natively on Salesforce that bridges the gap between your EMR and your Donor CRM. It identifies grateful patients, engages clinicians, qualifies prospects, and hands them off to your fundraisers with full context.
             </p>
 

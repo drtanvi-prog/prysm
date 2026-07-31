@@ -104,10 +104,10 @@ export const Solutions = () => {
               <span className="eyebrow">Clinician Partnership</span>
               <span className="hairline"></span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-ink mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-ink mb-6">
               Built around the clinicians at the center of every gift.
             </h2>
-            <p className="text-lg text-slate-500">
+            <p className="text-sm sm:text-base md:text-lg text-slate-500">
               Prysm makes it easy for clinicians to identify and refer grateful patients, building shared ownership of philanthropy through a defined 8-step workflow.
             </p>
           </div>

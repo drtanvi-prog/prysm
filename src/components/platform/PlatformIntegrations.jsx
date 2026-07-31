@@ -13,10 +13,10 @@ export const PlatformIntegrations = () => {
             <span className="eyebrow">Integrations Ecosystem</span>
             <span className="hairline"></span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6">
             Connected to the systems you already use.
           </h2>
-          <p className="text-lg text-slate-500">
+          <p className="text-sm sm:text-base md:text-lg text-slate-500">
             Prysm is designed to sit cleanly in the middle of your technology stack, mapping data securely without manual intervention.
           </p>
         </div>

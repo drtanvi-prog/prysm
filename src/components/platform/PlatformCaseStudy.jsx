@@ -8,12 +8,13 @@ export const PlatformCaseStudy = () => {
         {/* Case Study Header & Funnel */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center mb-12 md:mb-24">
           <div className="flex-1">
-            <h2 className="text-2xl sm:text-3xl font-light text-slate-800 mb-2">Case Study: Major</h2>
-            <h2 className="text-2xl sm:text-3xl font-light text-slate-800 mb-8">Academic Medical Center</h2>
-            <p className="text-slate-500 font-light leading-relaxed mb-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-light text-slate-800 mb-8">
+              Case Study: Major - Academic Medical Center
+            </h2>
+            <p className="text-sm sm:text-base text-slate-500 font-light leading-relaxed mb-6">
               This academic medical center had no prior history of grateful patient philanthropy, flat wealth screening results, low physician engagement, multiple health system re-brandings and a 100% outpatient population. Whoa! That’s a mouthful.
             </p>
-            <p className="text-slate-500 font-light leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-500 font-light leading-relaxed">
               Leveraging Prysm, 2 talented major gift officers partnered with 2 enthusiastic development associates to transform healthcare philanthropy at their organization. Over a 12 month period, they expanded their major gift pipeline with 41 new qualified major gift prospects and 8 first-time donations totaling $1.8M.
             </p>
           </div>

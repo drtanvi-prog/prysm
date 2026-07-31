@@ -24,10 +24,10 @@ export const PlatformClinicians = () => {
             <span className="hairline"></span>
             <span className="eyebrow">Clinician Partnership</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6 leading-tight">
             Built around the clinicians at <span className="text-accent">the center of every gift.</span>
           </h2>
-          <p className="text-lg text-slate-500 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-slate-500 leading-relaxed">
             Prysm makes it easy for clinicians to identify and refer grateful patients - and builds shared ownership of philanthropy by showing them the difference their referrals make for patient care and the institution's mission.
           </p>
         </div>

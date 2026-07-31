@@ -18,10 +18,10 @@ export const Features = () => {
             <span className="hairline"></span>
             <span className="eyebrow">What Prysm Does</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-ink max-w-2xl">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink max-w-2xl">
             Everything your team needs to grow grateful patient giving.
           </h2>
-          <p className="mt-4 text-lg text-slate-500 max-w-3xl">
+          <p className="mt-4 text-sm sm:text-base md:text-lg text-slate-500 max-w-3xl">
             Patient identification, physician partnership, prospect qualification, donor cultivation, and reporting - together in one place, built natively on Salesforce.
           </p>
         </div>
