@@ -12,22 +12,21 @@ export const Hero = () => {
 
         {/* Headings & Actions */}
         <div className="max-w-4xl mx-auto mb-12">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="hairline"></span>
-            <span className="eyebrow">The Operational Bridge</span>
-            <span className="hairline"></span>
+          <div className="flex items-center justify-center mb-6">
+            <img src={prysmIcon} alt="Prysm" className="h-5 w-[72px] object-contain" />
           </div>
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-ink tracking-tight leading-tight mb-6">
-            Where healthcare and philanthropy operate as <span className="text-accent">one system.</span>
+            Intelligently Orchestrated <br className="hidden sm:block" />
+            <span className="text-accent">Healthcare Philanthropy.</span>
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-            Prysm connects clinicians, patients, and fundraisers on a single platform - turning clinical encounters into qualified major gifts, without asking your teams to change how they already work.
+            PRYSM helps healthcare philanthropy organizations identify, prioritize, and engage their highest-potential opportunities. It transforms patient data into actionable intelligence - helping development teams build stronger pipelines and raise more money.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 max-w-xs sm:max-w-none mx-auto">
-            <Link to="/contact" className="inline-flex items-center justify-center px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-ink text-white font-medium hover:bg-ink-soft transition-all hover:-translate-y-0.5 hover:shadow-md shadow-sm cursor-pointer text-sm sm:text-base">
+            <Link to="/contact" className="inline-flex items-center justify-center px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-ink text-white font-medium hover:bg-ink-soft transition-all hover:-translate-y-0.5 hover:shadow-md shadow-sm cursor-pointer text-sm sm:text-base backface-hidden transform-gpu">
               Request Demo
             </Link>
-            <Link to="/platform" className="inline-flex items-center justify-center px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-white border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 hover:border-slate-400 transition-all hover:-translate-y-0.5 cursor-pointer text-sm sm:text-base">
+            <Link to="/platform" className="inline-flex items-center justify-center px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-white border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 hover:border-slate-400 transition-all hover:-translate-y-0.5 cursor-pointer text-sm sm:text-base backface-hidden transform-gpu">
               Explore the Platform
             </Link>
           </div>
@@ -78,20 +77,6 @@ export const Hero = () => {
               </div>
             </div>
 
-            <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-slate-200/60 grid grid-cols-3 gap-1 sm:gap-4 text-center">
-              <div>
-                <div className="text-base sm:text-2xl font-bold text-ink">$4.3M</div>
-                <div className="text-[9px] sm:text-[11px] text-slate-500 mt-0.5 leading-tight">First-year gifts</div>
-              </div>
-              <div className="border-x border-slate-200/60 px-1 sm:px-2">
-                <div className="text-base sm:text-2xl font-bold text-ink">+1,233%</div>
-                <div className="text-[9px] sm:text-[11px] text-slate-500 mt-0.5 leading-tight">First-time gifts</div>
-              </div>
-              <div>
-                <div className="text-base sm:text-2xl font-bold text-ink">+3,225%</div>
-                <div className="text-[9px] sm:text-[11px] text-slate-500 mt-0.5 leading-tight font-medium">Referrals</div>
-              </div>
-            </div>
           </div>
         </div>
 

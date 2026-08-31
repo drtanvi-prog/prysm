@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Logo } from './utils/Icons'
+import { Logo, LogoIcon } from './utils/Icons'
 
 export const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -14,13 +14,17 @@ export const Header = () => {
     ]
 
     return (
-        <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-100">
+        <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-100 transform-gpu backface-hidden">
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
 
                 {/* Logo Section */}
                 <div className="flex-shrink-0 flex items-center">
                     <Link to="/" className="flex items-center gap-2" aria-label="Prysm Home">
-                        <Logo />
+                        <LogoIcon className="w-6 h-6" />
+                        <div className="flex flex-col">
+                            <span className="text-lg font-bold text-ink leading-none">Prysm</span>
+                            <span className="text-[10px] font-medium text-slate-500 leading-none mt-0.5">by Actionable Insight</span>
+                        </div>
                     </Link>
                 </div>
 
@@ -48,7 +52,7 @@ export const Header = () => {
                     {/* <Link to="/security" className="text-[15px] font-medium text-slate-500 hover:text-ink transition-colors">
                         Security
                     </Link> */}
-                    <Link to="/contact" className="bg-ink hover:bg-ink-soft text-white px-5 py-2.5 rounded-full text-sm font-medium transition-colors shadow-sm">
+                    <Link to="/contact" className="bg-ink hover:bg-ink-soft text-white px-5 py-2.5 rounded-full text-sm font-medium transition-colors shadow-sm backface-hidden transform-gpu">
                         Request Demo
                     </Link>
                 </div>

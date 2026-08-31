@@ -29,19 +29,41 @@ export const Features = () => {
         {/* Value Props Row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
           <div className="bg-slate-50 px-6 py-8 sm:p-10 rounded-xl border border-slate-200">
-            <div className="text-xs font-bold tracking-wider text-accent-strong uppercase mb-4">For the team</div>
-            <h3 className="text-2xl font-bold mb-4 text-ink">Insight</h3>
-            <p className="text-slate-500 text-sm leading-relaxed">Shared visibility for everyone in the program - from the development officer making calls to the Chief Development Officer briefing the board.</p>
+            <h3 className="text-xl font-bold mb-4 text-ink leading-snug">From Millions of Patients to the Right Opportunities</h3>
+            <p className="text-slate-500 text-sm leading-relaxed mb-4">
+              PRYSM turns an enormous patient population into a focused, prioritized pipeline of philanthropic opportunity.
+            </p>
+            <p className="text-slate-500 text-sm leading-relaxed mb-4">
+              Rather than relying on fundraisers to manually search for prospects across disconnected systems and data, PRYSM helps surface the people and relationships that matter most.
+            </p>
+            <p className="text-accent-strong font-bold text-sm">Right person. Right context. Right time.</p>
           </div>
           <div className="bg-ink px-6 py-8 sm:p-10 rounded-xl shadow-md">
-            <div className="text-xs font-bold tracking-wider text-accent-soft uppercase mb-4">For the day's work</div>
-            <h3 className="text-2xl font-bold mb-4 text-white">Efficiency</h3>
-            <p className="text-slate-300 text-sm leading-relaxed">Time-consuming work - list-building, screening, call logging, hand-offs - is handled in the background, so fundraisers can focus on donor relationships.</p>
+            <h3 className="text-xl font-bold mb-4 text-white leading-snug">More Than Wealth</h3>
+            <p className="text-slate-300 text-sm leading-relaxed mb-4">
+              Wealth identifies capacity. It does not identify intent, connection, or timing.
+            </p>
+            <p className="text-slate-300 text-sm leading-relaxed mb-4">
+              PRYSM helps organizations understand the broader picture - including a patient's relationship with physicians, programs, facilities, and the health system itself.
+            </p>
+            <p className="text-white font-semibold text-sm leading-relaxed">
+              That context helps philanthropy teams move beyond simply asking “Who has wealth?” Instead, they can ask: “Who has the capacity, connection, and reason to give?”
+            </p>
           </div>
           <div className="bg-slate-50 px-6 py-8 sm:p-10 rounded-xl border border-slate-200">
-            <div className="text-xs font-bold tracking-wider text-accent-strong uppercase mb-4">For the program</div>
-            <h3 className="text-2xl font-bold mb-4 text-ink">Partnership</h3>
-            <p className="text-slate-500 text-sm leading-relaxed">Fundraisers, physicians, and foundation leadership working from the same patient view - as a coordinated team, with the right information for each role.</p>
+            <h3 className="text-xl font-bold mb-4 text-ink leading-snug">Build More Pipeline. Not More Process.</h3>
+            <p className="text-slate-500 text-sm leading-relaxed mb-4">
+              Healthcare philanthropy teams are being asked to produce greater results with limited resources. PRYSM helps them do more with what they already have - their data, their relationships, their fundraisers, and their clinical partners.
+            </p>
+            <p className="text-slate-500 text-sm leading-relaxed mb-3">
+              The result is a more systematic and scalable approach to grateful patient fundraising:
+            </p>
+            <ul className="text-slate-500 text-sm leading-relaxed space-y-1 list-disc list-inside">
+              <li>More qualified opportunities.</li>
+              <li>Better use of fundraiser time.</li>
+              <li>Stronger physician engagement.</li>
+              <li>Greater philanthropic impact.</li>
+            </ul>
           </div>
         </div>
 

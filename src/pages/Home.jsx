@@ -19,7 +19,6 @@ export const Home = () => {
       <TheOpportunity />
       <TheChallenges />
       <HomeSolutions />
-      <HowItWorks />
       <FAQ />
       <CTA />
     </>

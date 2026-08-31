@@ -8,27 +8,28 @@ export const TheOpportunity = () => {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <span className="hairline"></span>
-              <span className="eyebrow">The Opportunity</span>
+              <span className="eyebrow">The Opportunity Is Already There</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-8">The great wealth transfer</h2>
-            <div className="text-5xl xs:text-7xl sm:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-ink via-accent to-accent-strong tracking-tight mb-2">
-              $124T
-            </div>
-            <p className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-8">Projected to transfer through 2048</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6">
+              Who should we be paying attention to right now?
+            </h2>
             <p className="text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed mb-6">
-              An estimated <strong className="font-semibold text-ink">$18 trillion</strong> of it will flow to charity - a generational opportunity for mission-aligned healthcare fundraising.
+              Healthcare philanthropy does not suffer from a lack of potential donors. The problem is finding and prioritizing them, including identifying the right physicians whose patient panels hold true philanthropic potential.
             </p>
             <div className="hairline mb-6"></div>
+            <p className="text-slate-500 leading-relaxed text-sm mb-4">
+              Traditional wealth screening identifies capacity. Fundraising CRMs manage relationships after prospects enter the pipeline. But an enormous gap remains between the healthcare enterprise and the development organization.
+            </p>
             <p className="text-slate-500 leading-relaxed text-sm">
-              Healthcare already receives <strong className="font-semibold text-slate-900">$53B in annual U.S. giving</strong> - one of the largest and fastest-growing charitable categories. Yet most foundations can't reach the opportunity in front of them.
+              <strong className="font-semibold text-slate-900">PRYSM closes that gap.</strong> It continuously brings together signals of capacity, affinity, connection, and timing to answer the question every development organization faces.
             </p>
           </div>
 
           {/* Right Column: The Challenges Summary */}
           <div className="bg-white rounded-xl p-8 sm:p-10 border border-slate-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 relative group">
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-accent to-accent-strong rounded-t-2xl"></div>
-            <div className="text-xs font-bold tracking-wider text-slate-400 uppercase mb-3">Why Most Programs Miss It</div>
-            <h3 className="text-2xl font-bold text-ink mb-8">Five challenges stand in the way.</h3>
+            <div className="text-xs font-bold tracking-wider text-slate-400 uppercase mb-3">The Solution</div>
+            <h3 className="text-2xl font-bold text-ink mb-8">Prysm solves philanthropy's top five challenges.</h3>
 
             <ul className="space-y-6">
               {[

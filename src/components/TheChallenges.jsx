@@ -28,14 +28,14 @@ export const TheChallenges = () => {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="hairline"></span>
-            <span className="eyebrow">The Problem</span>
+            <span className="eyebrow">The Solution</span>
             <span className="hairline"></span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6">
-            Why the wealth transfer is being missed.
+            Solving the top challenges in healthcare philanthropy.
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-slate-500 leading-relaxed">
-            Despite the opportunity, hospital foundations are blocked by operational challenges that keep grateful patient programs from scaling.
+            Despite the opportunity, hospital foundations are often blocked by operational challenges. Prysm is built to solve them and help grateful patient programs scale.
           </p>
         </div>
 
