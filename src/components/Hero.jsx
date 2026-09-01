@@ -9,18 +9,18 @@ export const Hero = () => {
   return (
     <div className="relative pt-12 pb-16 sm:pt-24 sm:pb-24 lg:pt-32 lg:pb-32 overflow-hidden bg-white">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 w-full">
-        
+
         {/* Headings & Actions */}
         <div className="max-w-4xl mx-auto mb-10 sm:mb-24">
           <div className="flex items-center justify-center mb-5 sm:mb-8">
             <img src={prysmIcon} alt="Prysm" className="h-6 sm:h-10 w-auto object-contain" />
           </div>
           <h1 className="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-bold text-ink tracking-tight sm:tracking-tighter leading-[1.2] sm:leading-tight mb-4 sm:mb-6 px-1 sm:px-0">
-            Intelligently Orchestrated <br className="hidden sm:block" />
-            <span className="text-accent">Healthcare Philanthropy.</span>
+            A better way for <br className="hidden sm:block" />
+            <span className="text-accent">healthcare philanthropy.</span>
           </h1>
           <p className="text-[15px] sm:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0">
-            PRYSM helps healthcare philanthropy organizations identify, prioritize, and engage their highest-potential opportunities. It transforms patient data into actionable intelligence - helping development teams build stronger pipelines and raise more money.
+            Prysm gives health systems a better way to unlock the full potential of grateful patient philanthropy - turning clinical encounters into qualified major gifts, without adding process for your team.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 max-w-xs sm:max-w-none mx-auto">
             <Link to="/contact" className="inline-flex items-center justify-center px-6 py-2.5 sm:px-7 sm:py-3.5 rounded-lg sm:rounded-full bg-ink text-white font-medium hover:bg-ink-soft transition-all hover:-translate-y-0.5 hover:shadow-md shadow-sm cursor-pointer text-sm sm:text-base backface-hidden transform-gpu">
@@ -35,9 +35,7 @@ export const Hero = () => {
         {/* Signature visual: EMR -> Prysm -> CRM bridge */}
         <div className="relative mt-16 sm:mt-20 lg:mt-24 max-w-4xl mx-auto">
           <div className="relative rounded-xl bg-slate-50/50 border border-slate-200/60 pt-6 pb-5 px-4 sm:p-8 lg:p-10 transition-colors duration-300">
-
             <div className="flex flex-row items-center justify-between gap-1 sm:gap-2">
-
               <div className="flex-1 text-center">
                 <div className="w-10 h-10 sm:w-14 sm:h-14 mx-auto rounded-xl bg-white border border-slate-200/80 flex items-center justify-center mb-2 shadow-[0_2px_8px_rgba(0,0,0,0.02)]">
                   <svg className="w-4 h-4 sm:w-6 sm:h-6 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -48,7 +46,6 @@ export const Hero = () => {
                 <div className="text-[9px] sm:text-xs text-slate-500 mt-0.5 leading-tight hidden xs:block whitespace-nowrap">Clinical record</div>
               </div>
 
-              {/* Connection Line 1 */}
               <div className="flex items-center justify-center flex-1 relative min-w-[20px] sm:min-w-[40px] px-1 sm:px-2">
                 <div className="w-full h-px bg-slate-200"></div>
                 <div className="absolute w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent"></div>
@@ -60,7 +57,6 @@ export const Hero = () => {
                 </div>
               </div>
 
-              {/* Connection Line 2 */}
               <div className="flex items-center justify-center flex-1 relative min-w-[20px] sm:min-w-[40px] px-1 sm:px-2">
                 <div className="w-full h-px bg-slate-200"></div>
                 <div className="absolute w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent"></div>
@@ -76,7 +72,6 @@ export const Hero = () => {
                 <div className="text-[9px] sm:text-xs text-slate-500 mt-0.5 leading-tight hidden xs:block whitespace-nowrap">System of record</div>
               </div>
             </div>
-
           </div>
         </div>
 

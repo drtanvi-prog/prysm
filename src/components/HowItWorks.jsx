@@ -1,139 +1,87 @@
-import { useState } from 'react'
+import { FadeUp } from './animations/FadeUp'
 
 export const HowItWorks = () => {
-  const [activeStep, setActiveStep] = useState(0)
-
-  const steps = [
-    {
-      step: "Step 1",
-      title: "Identify grateful patients",
-      description: "Single click reporting and automated encounter analysis provides fundraisers with real time access to patients with greatest affinity and capacity.",
-      image: "/illustrations/step-1.829c359c.svg"
-    },
-    {
-      step: "Step 2",
-      title: "Engage clinicians",
-      description: "When clinicians are engaged in a process with analytically sound information and consistent follow up reporting, they are highly willing to partner with development.",
-      image: "/illustrations/step-2.88960699.svg"
-    },
-    {
-      step: "Step 3",
-      title: "Qualify prospects",
-      description: "Intuitive in-platform phone call and email tracking enables fundraisers to efficiently record discovery activity.",
-      image: "/illustrations/step-3.57f5e397.svg"
-    },
-    {
-      step: "Step 4",
-      title: "Hand off to your CRM",
-      description: "Intuitive single click reporting enables fundraisers to view clinicians’ patients using a scoring model that combines affinity and capacity.",
-      image: "/illustrations/step-4_1.b7da9f35.svg"
-    },
-    {
-      step: "Step 5",
-      title: "Report impact back",
-      description: "Easily track and record outcomes of discovery activity to optimize program strategy.",
-      image: "/illustrations/step-5.ac1ea224.svg"
-    }
-  ]
-
   return (
-    <section className="py-24 sm:py-32 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
+    <section id="the-difference" className="py-24 sm:py-32 lg:py-40 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="flex items-center justify-center gap-3 mb-5">
+        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-24">
+          <FadeUp delay={0.1} className="flex items-center justify-center gap-3 mb-5">
             <span className="hairline"></span>
-            <span className="eyebrow">How it works</span>
+            <span className="eyebrow text-accent">The Prysm Difference</span>
             <span className="hairline"></span>
-          </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6">Prysm closes the loop every other system leaves open.</h2>
-          <p className="text-sm sm:text-base md:text-lg text-slate-500">
-            A repeatable engine for grateful patient philanthropy - where reporting impact back to clinicians is what earns the next referral.
-          </p>
-        </div>
-
-        {/* Interactive Tabs Layout */}
-        <div className="mb-24">
-          {/* Tabs Header */}
-          <div className="flex overflow-x-auto lg:flex-wrap pb-0 gap-6 lg:gap-0 lg:justify-between border-b border-slate-200 mb-12 scrollbar-none">
-            {steps.map((step, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveStep(index)}
-                className={`pb-4 flex-shrink-0 lg:flex-1 text-left px-2 border-b-2 transition-colors cursor-pointer min-w-[140px] ${
-                  activeStep === index 
-                    ? 'border-accent text-slate-900 font-semibold' 
-                     : 'border-transparent text-slate-400 hover:text-slate-600 hover:border-slate-300'
-                }`}
-              >
-                <div className="text-xs font-bold uppercase tracking-wider mb-1">{step.step}</div>
-                <div className="text-sm">{step.title}</div>
-              </button>
-            ))}
-          </div>
-
-          {/* Tab Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[360px] py-8">
-            <div>
-              <h3 className="text-2xl font-bold text-ink mb-4">{steps[activeStep].title}</h3>
-              <p className="text-lg text-slate-500 font-light leading-relaxed">
-                {steps[activeStep].description}
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <img 
-                src={steps[activeStep].image} 
-                alt={steps[activeStep].title}
-                className="max-w-full h-auto object-contain"
-                style={{ maxHeight: '350px' }}
-              />
-            </div>
-          </div>
+          </FadeUp>
+          <FadeUp delay={0.2} as="h2" className="text-3xl sm:text-4xl md:text-5xl font-bold text-ink mb-6 tracking-tight">
+            Bridging the gap between data and relationships.
+          </FadeUp>
+          <FadeUp delay={0.3} className="text-base sm:text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+            Prysm is a secure intelligence layer that sits between your clinical systems and your fundraising database. It closes the loop every other system leaves open.
+          </FadeUp>
         </div>
 
         {/* Comparison Boxes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          
           {/* Card 1: AI Tools */}
-          <div className="bg-white border border-slate-200/80 p-8 rounded-xl flex flex-col justify-between hover:border-slate-300 transition-colors duration-200">
-            <div>
-              <h4 className="text-lg font-bold text-ink mb-3">AI tools</h4>
-              <p className="text-slate-500 text-sm leading-relaxed mb-4">
-                Surface prospects effectively, but lack the workflow capabilities needed to manage clinician partnerships.
+          <FadeUp delay={0.4} className="bg-white border border-slate-200 p-8 sm:p-10 rounded-2xl flex flex-col shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex-grow">
+              <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-ink mb-4">AI Point Solutions</h4>
+              <p className="text-slate-500 leading-relaxed mb-8">
+                They surface prospects effectively, but lack the workflow capabilities needed to manage clinician partnerships and track real outcomes.
               </p>
             </div>
-            <div className="text-[10px] font-bold tracking-wider text-slate-400 uppercase">
-              Point Solution
+            <div className="text-xs font-bold tracking-widest text-slate-400 uppercase pt-6 border-t border-slate-100">
+              Incomplete Workflow
             </div>
-          </div>
+          </FadeUp>
 
           {/* Card 2: Donor CRMs */}
-          <div className="bg-white border border-slate-200/80 p-8 rounded-xl flex flex-col justify-between hover:border-slate-300 transition-colors duration-200">
-            <div>
-              <h4 className="text-lg font-bold text-ink mb-3">Donor CRMs</h4>
-              <p className="text-slate-500 text-sm leading-relaxed mb-4">
-                Hold and secure donor data, but fail to report results or engagement impact back to the medical staff.
+          <FadeUp delay={0.5} className="bg-white border border-slate-200 p-8 sm:p-10 rounded-2xl flex flex-col shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex-grow">
+               <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-ink mb-4">Traditional CRMs</h4>
+              <p className="text-slate-500 leading-relaxed mb-8">
+                They securely hold donor data and manage relationships, but fail to report engagement impact back to the medical staff.
               </p>
             </div>
-            <div className="text-[10px] font-bold tracking-wider text-slate-400 uppercase">
-              System of Record
+            <div className="text-xs font-bold tracking-widest text-slate-400 uppercase pt-6 border-t border-slate-100">
+              System of Record Only
             </div>
-          </div>
+          </FadeUp>
 
           {/* Card 3: Prysm */}
-          <div className="bg-ink p-8 rounded-xl flex flex-col justify-between relative overflow-hidden group">
-            <div>
-              <h4 className="text-lg font-bold text-white mb-3">Prysm</h4>
-              <p className="text-indigo-200/90 text-sm leading-relaxed mb-4">
-                Bridges the gap by surfacing clinical prospects and closing the loop with automated outcome reporting.
+          <FadeUp delay={0.6} className="bg-ink p-8 sm:p-10 rounded-2xl flex flex-col relative overflow-hidden shadow-xl lg:-translate-y-4">
+            <div className="absolute -right-10 -top-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl"></div>
+            <div className="absolute -left-10 -bottom-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
+            
+            <div className="relative z-10 flex-grow">
+              <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-white mb-4">The Prysm Platform</h4>
+              <p className="text-slate-300 leading-relaxed mb-8">
+                Bridges the gap by intelligently surfacing high-capacity clinical prospects and closing the loop with automated outcome reporting.
               </p>
             </div>
-            <div className="text-xs font-bold uppercase tracking-wider text-white pt-4 border-t border-white/20">
-              Only Prysm does both.
+            <div className="relative z-10 pt-6 border-t border-white/20 mt-auto flex items-center gap-2">
+               <div className="w-2 h-2 rounded-full bg-accent animate-pulse"></div>
+               <span className="text-sm font-bold tracking-widest text-accent uppercase">Only Prysm does both</span>
             </div>
-          </div>
-        </div>
+          </FadeUp>
 
+        </div>
       </div>
     </section>
   )

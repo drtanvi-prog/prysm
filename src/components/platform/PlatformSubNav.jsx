@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 const sections = [
-  { id: 'how-it-works', label: 'How it Works' },
+  { id: 'the-difference', label: 'The Difference' },
   { id: 'features', label: 'Features' },
   { id: 'in-action', label: 'In Action' },
   { id: 'pipeline', label: 'Pipeline' },
