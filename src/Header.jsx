@@ -14,8 +14,8 @@ export const Header = () => {
     ]
 
     return (
-        <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-100 transform-gpu backface-hidden">
-            <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
+        <header className="bg-white/70 backdrop-blur-xl sticky top-0 z-50 border-b border-slate-100/50 transform-gpu backface-hidden transition-all duration-300">
+            <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center transition-all duration-300">
 
                 {/* Logo Section */}
                 <div className="flex-shrink-0 flex items-center">

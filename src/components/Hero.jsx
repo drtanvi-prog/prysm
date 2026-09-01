@@ -7,26 +7,26 @@ import prysmIcon from '../assets/icons/prysm-icon-dark.svg';
 
 export const Hero = () => {
   return (
-    <section className="relative overflow-hidden pt-16 pb-14 sm:pt-24 sm:pb-16 lg:pt-32 lg:pb-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-
+    <div className="relative pt-12 pb-16 sm:pt-24 sm:pb-24 lg:pt-32 lg:pb-32 overflow-hidden bg-white">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 w-full">
+        
         {/* Headings & Actions */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="flex items-center justify-center mb-6">
-            <img src={prysmIcon} alt="Prysm" className="h-5 w-[72px] object-contain" />
+        <div className="max-w-4xl mx-auto mb-10 sm:mb-24">
+          <div className="flex items-center justify-center mb-5 sm:mb-8">
+            <img src={prysmIcon} alt="Prysm" className="h-6 sm:h-10 w-auto object-contain" />
           </div>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-ink tracking-tight leading-tight mb-6">
+          <h1 className="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-bold text-ink tracking-tight sm:tracking-tighter leading-[1.2] sm:leading-tight mb-4 sm:mb-6 px-1 sm:px-0">
             Intelligently Orchestrated <br className="hidden sm:block" />
             <span className="text-accent">Healthcare Philanthropy.</span>
           </h1>
-          <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="text-[15px] sm:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0">
             PRYSM helps healthcare philanthropy organizations identify, prioritize, and engage their highest-potential opportunities. It transforms patient data into actionable intelligence - helping development teams build stronger pipelines and raise more money.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 max-w-xs sm:max-w-none mx-auto">
-            <Link to="/contact" className="inline-flex items-center justify-center px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-ink text-white font-medium hover:bg-ink-soft transition-all hover:-translate-y-0.5 hover:shadow-md shadow-sm cursor-pointer text-sm sm:text-base backface-hidden transform-gpu">
+            <Link to="/contact" className="inline-flex items-center justify-center px-6 py-2.5 sm:px-7 sm:py-3.5 rounded-lg sm:rounded-full bg-ink text-white font-medium hover:bg-ink-soft transition-all hover:-translate-y-0.5 hover:shadow-md shadow-sm cursor-pointer text-sm sm:text-base backface-hidden transform-gpu">
               Request Demo
             </Link>
-            <Link to="/platform" className="inline-flex items-center justify-center px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-white border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 hover:border-slate-400 transition-all hover:-translate-y-0.5 cursor-pointer text-sm sm:text-base backface-hidden transform-gpu">
+            <Link to="/platform" className="inline-flex items-center justify-center px-6 py-2.5 sm:px-7 sm:py-3.5 rounded-lg sm:rounded-full bg-white text-ink border border-slate-200 font-medium hover:bg-slate-50 transition-all hover:-translate-y-0.5 hover:shadow-md shadow-sm cursor-pointer text-sm sm:text-base backface-hidden transform-gpu">
               Explore the Platform
             </Link>
           </div>
@@ -93,6 +93,6 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

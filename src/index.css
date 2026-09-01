@@ -74,11 +74,6 @@
   .eyebrow {
     @apply inline-flex items-center gap-2 text-xs font-semibold tracking-[0.16em] text-slate-500 uppercase;
   }
-  .eyebrow::before {
-    content: "";
-    @apply w-1.5 h-1.5 rounded-full inline-block;
-    background: var(--color-accent);
-  }
   .hairline {
     @apply w-8 h-px bg-slate-200;
   }

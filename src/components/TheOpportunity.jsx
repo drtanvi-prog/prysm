@@ -1,63 +1,68 @@
-export const TheOpportunity = () => {
-  return (
-    <section className="py-24 sm:py-32 bg-slate-50 border-t border-slate-200 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+import { FadeUp } from './animations/FadeUp'
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column: The Opportunity */}
-          <div>
-            <div className="flex items-center gap-3 mb-5">
-              <span className="hairline"></span>
-              <span className="eyebrow">The Opportunity Is Already There</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6">
-              Who should we be paying attention to right now?
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed mb-6">
-              Healthcare philanthropy does not suffer from a lack of potential donors. The problem is finding and prioritizing them, including identifying the right physicians whose patient panels hold true philanthropic potential.
-            </p>
-            <div className="hairline mb-6"></div>
-            <p className="text-slate-500 leading-relaxed text-sm mb-4">
-              Traditional wealth screening identifies capacity. Fundraising CRMs manage relationships after prospects enter the pipeline. But an enormous gap remains between the healthcare enterprise and the development organization.
-            </p>
-            <p className="text-slate-500 leading-relaxed text-sm">
-              <strong className="font-semibold text-slate-900">PRYSM closes that gap.</strong> It continuously brings together signals of capacity, affinity, connection, and timing to answer the question every development organization faces.
-            </p>
+export const TheOpportunity = () => {
+  const challenges = [
+    { title: 'Siloed systems', desc: "Patient, donor, and wealth data live in separate places." },
+    { title: 'Low data confidence', desc: "Leadership can't see what's actually working." },
+    { title: 'Identification lag', desc: "High-potential patients aren't surfaced within the gratitude window." },
+    { title: 'Staff burnout', desc: "Fundraisers spend more time on data than donors." },
+    { title: 'Disconnected clinician engagement', desc: "Referrals stay informal, with no impact loop." },
+  ]
+
+  return (
+    <section className="py-24 sm:py-32 lg:py-40 bg-white relative border-t border-slate-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 lg:items-start">
+          
+          {/* Left Column: Sticky Header */}
+          <div className="lg:col-span-5 lg:sticky lg:top-32">
+            <FadeUp delay={0.1}>
+              <span className="text-slate-400 uppercase tracking-widest text-xs font-bold block mb-6">The Solution</span>
+            </FadeUp>
+            <FadeUp delay={0.2} as="h2" className="text-4xl sm:text-5xl font-semibold text-ink tracking-tight leading-[1.1] mb-10">
+              Prysm solves philanthropy's top five challenges.
+            </FadeUp>
+            <FadeUp delay={0.3} className="hidden lg:block">
+              <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                <p className="text-ink font-medium leading-relaxed">
+                  <span className="text-accent font-bold">ONLY PRYSM</span> closes all five - turning the opportunity into qualified major gifts.
+                </p>
+              </div>
+            </FadeUp>
           </div>
 
-          {/* Right Column: The Challenges Summary */}
-          <div className="bg-white rounded-xl p-8 sm:p-10 border border-slate-200/80 shadow-xl hover:shadow-2xl transition-all duration-300 relative group">
-            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-accent to-accent-strong rounded-t-2xl"></div>
-            <div className="text-xs font-bold tracking-wider text-slate-400 uppercase mb-3">The Solution</div>
-            <h3 className="text-2xl font-bold text-ink mb-8">Prysm solves philanthropy's top five challenges.</h3>
-
-            <ul className="space-y-6">
-              {[
-                { title: 'Siloed systems', desc: "patient, donor, and wealth data live in separate places." },
-                { title: 'Low data confidence', desc: "leadership can't see what's actually working." },
-                { title: 'Identification lag', desc: "high-potential patients aren't surfaced within the gratitude window." },
-                { title: 'Staff burnout', desc: "fundraisers spend more time on data than donors." },
-                { title: 'Disconnected clinician engagement', desc: "referrals stay informal, with no impact loop." },
-              ].map((item, index) => (
-                <li key={index} className="flex gap-4 group/item hover:translate-x-1 transition-all duration-200">
-                  <div className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-accent-soft text-accent font-bold text-sm group-hover/item:bg-accent group-hover/item:text-white transition-colors duration-200">
-                    {index + 1}
+          {/* Right Column: Clean List */}
+          <div className="lg:col-span-7">
+            <div className="space-y-12">
+              {challenges.map((item, index) => (
+                <FadeUp key={index} delay={0.1 + (index * 0.1)} className="flex gap-6 sm:gap-8">
+                  <div className="flex-shrink-0 mt-1">
+                    <div className="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center text-lg font-bold text-slate-400 bg-white shadow-sm">
+                      {index + 1}
+                    </div>
                   </div>
                   <div>
-                    <span className="font-bold text-ink group-hover/item:text-accent transition-colors duration-200">{item.title}</span> <span className="text-slate-500">- {item.desc}</span>
+                    <h3 className="text-2xl font-semibold text-ink mb-3 tracking-tight">
+                      {item.title}
+                    </h3>
+                    <p className="text-lg text-slate-500 leading-relaxed max-w-xl">
+                      {item.desc}
+                    </p>
                   </div>
-                </li>
+                </FadeUp>
               ))}
-            </ul>
-
-            <div className="mt-10 p-5 bg-gradient-to-br from-ink to-ink-soft rounded-xl text-white shadow-lg relative overflow-hidden">
-              <div className="absolute -right-10 -bottom-10 w-24 h-24 rounded-full bg-white/5 blur-xl"></div>
-              <p className="font-semibold text-sm leading-relaxed relative z-10">
-                <span className="text-accent-soft font-bold uppercase tracking-wider mr-2">Only Prysm</span>
-                closes all five - turning the opportunity into qualified major gifts.
-              </p>
             </div>
+
+            {/* Mobile Conclusion (Hidden on Desktop) */}
+            <FadeUp delay={0.6} className="mt-16 lg:hidden">
+              <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100 text-center sm:text-left">
+                <p className="text-ink font-medium leading-relaxed">
+                  <span className="text-accent font-bold">ONLY PRYSM</span> closes all five - turning the opportunity into qualified major gifts.
+                </p>
+              </div>
+            </FadeUp>
           </div>
+
         </div>
       </div>
     </section>
