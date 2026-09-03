@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { PrysmGraphic } from './PrysmGraphic'
 
 export const HomeSolutions = () => {
   return (
@@ -47,62 +48,8 @@ export const HomeSolutions = () => {
           </div>
 
           {/* Right Side Visual Block */}
-          <div className="bg-white p-8 sm:p-10 rounded-[1.75rem] border border-slate-200 shadow-xl relative overflow-hidden">
-            <div className="space-y-5 relative z-10">
-              <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-white rounded-lg border border-slate-200 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-ink">EMR System</div>
-                    <div className="text-xs text-slate-500">Patient Encounters</div>
-                  </div>
-                </div>
-                <div className="text-xs font-mono text-accent bg-accent-soft px-2 py-1 rounded">Connected</div>
-              </div>
-
-              <div className="flex justify-center">
-                <div className="w-px h-8 bg-slate-300"></div>
-              </div>
-
-              <div className="bg-ink p-4 rounded-xl border border-ink-soft shadow-md">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center text-white font-bold">P</div>
-                  <div>
-                    <div className="text-sm font-bold text-white">Prysm Engine</div>
-                    <div className="text-xs text-slate-300">Salesforce Native</div>
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-2 mt-4">
-                  <div className="h-2 bg-ink-soft rounded w-full"></div>
-                  <div className="h-2 bg-ink-soft rounded w-3/4"></div>
-                  <div className="h-2 bg-ink-soft rounded w-5/6"></div>
-                  <div className="h-2 bg-ink-soft rounded w-full"></div>
-                </div>
-              </div>
-
-              <div className="flex justify-center">
-                <div className="w-px h-8 bg-slate-300"></div>
-              </div>
-
-              <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-white rounded-lg border border-slate-200 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-ink">Donor CRM</div>
-                    <div className="text-xs text-slate-500">Major Gifts Team</div>
-                  </div>
-                </div>
-                <div className="text-xs font-mono text-accent-strong bg-accent-soft px-2 py-1 rounded">Exporting</div>
-              </div>
-            </div>
+          <div className="relative">
+            <PrysmGraphic />
           </div>
 
         </div>
