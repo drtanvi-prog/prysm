@@ -8,6 +8,51 @@ import prysmIcon from '../assets/icons/prysm-icon-dark.svg';
 export const Hero = () => {
   return (
     <div className="relative pt-12 pb-8 sm:pt-24 sm:pb-12 lg:pt-32 lg:pb-12 overflow-hidden bg-white">
+
+      {/* ---------- Background: refracted light (the Prysm signature) ----------
+          Three translucent beams — teal, purple, magenta — fan out from the
+          top-right corner like light leaving a prism. Static, geometric,
+          fading to nothing before the headline so text stays on clean white. */}
+      <div className="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
+        <svg
+          className="absolute top-0 right-0 w-[140%] sm:w-full h-full"
+          viewBox="0 0 1440 900"
+          preserveAspectRatio="xMaxYMin slice"
+          fill="none"
+        >
+          <defs>
+            <linearGradient id="hero-beam-teal" x1="1440" y1="0" x2="200" y2="620" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stopColor="#0e9a8f" stopOpacity="0.14" />
+              <stop offset="0.55" stopColor="#0e9a8f" stopOpacity="0.05" />
+              <stop offset="1" stopColor="#0e9a8f" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient id="hero-beam-purple" x1="1440" y1="0" x2="80" y2="820" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stopColor="#4f56c9" stopOpacity="0.12" />
+              <stop offset="0.55" stopColor="#4f56c9" stopOpacity="0.045" />
+              <stop offset="1" stopColor="#4f56c9" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient id="hero-beam-magenta" x1="1440" y1="0" x2="340" y2="980" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stopColor="#c23d8f" stopOpacity="0.10" />
+              <stop offset="0.55" stopColor="#c23d8f" stopOpacity="0.04" />
+              <stop offset="1" stopColor="#c23d8f" stopOpacity="0" />
+            </linearGradient>
+            {/* hairline edge for the sharpest beam, gives the "cut glass" feel */}
+            <linearGradient id="hero-beam-edge" x1="1440" y1="0" x2="500" y2="700" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stopColor="#4f56c9" stopOpacity="0.25" />
+              <stop offset="1" stopColor="#4f56c9" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+
+          {/* beams fan out from a vanishing point just off the top-right corner */}
+          <polygon points="1500,-60 1560,-20 420,560 200,470" fill="url(#hero-beam-teal)" />
+          <polygon points="1520,-40 1580,30 300,760 60,620" fill="url(#hero-beam-purple)" />
+          <polygon points="1540,0 1590,90 460,920 260,760" fill="url(#hero-beam-magenta)" />
+
+          {/* one crisp hairline along the purple beam's upper edge */}
+          <line x1="1510" y1="-50" x2="330" y2="700" stroke="url(#hero-beam-edge)" strokeWidth="1.5" />
+        </svg>
+      </div>
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 w-full">
 
         {/* Headings & Actions */}
@@ -26,7 +71,7 @@ export const Hero = () => {
             <Link to="/contact" className="inline-flex items-center justify-center px-6 py-2.5 sm:px-7 sm:py-3.5 rounded-lg sm:rounded-full bg-ink text-white font-medium hover:bg-ink-soft transition-all hover:-translate-y-0.5 hover:shadow-md shadow-sm cursor-pointer text-sm sm:text-base backface-hidden transform-gpu">
               Request Demo
             </Link>
-            <Link to="/platform" className="inline-flex items-center justify-center px-6 py-2.5 sm:px-7 sm:py-3.5 rounded-lg sm:rounded-full bg-white text-ink border border-slate-200 font-medium hover:bg-slate-50 transition-all hover:-translate-y-0.5 hover:shadow-md shadow-sm cursor-pointer text-sm sm:text-base backface-hidden transform-gpu">
+            <Link to="/platform" className="inline-flex items-center justify-center px-6 py-2.5 sm:px-7 sm:py-3.5 rounded-lg sm:rounded-full bg-white/90 backdrop-blur-sm text-ink border border-slate-200 font-medium hover:bg-slate-50 transition-all hover:-translate-y-0.5 hover:shadow-md shadow-sm cursor-pointer text-sm sm:text-base backface-hidden transform-gpu">
               Explore the Platform
             </Link>
           </div>
@@ -34,7 +79,7 @@ export const Hero = () => {
 
         {/* Signature visual: EMR -> Prysm -> CRM bridge */}
         <div className="relative mt-16 sm:mt-20 lg:mt-24 max-w-4xl mx-auto">
-          <div className="relative rounded-xl bg-slate-50/50 border border-slate-200/60 pt-6 pb-5 px-4 sm:p-8 lg:p-10 transition-colors duration-300">
+          <div className="relative rounded-xl bg-white border border-slate-200/60 shadow-[0_4px_24px_-8px_rgba(24,22,51,0.08)] pt-6 pb-5 px-4 sm:p-8 lg:p-10 transition-colors duration-300">
             <div className="flex flex-row items-center justify-between gap-1 sm:gap-2">
               <div className="flex-1 text-center">
                 <div className="w-10 h-10 sm:w-14 sm:h-14 mx-auto rounded-xl bg-white border border-slate-200/80 flex items-center justify-center mb-2 shadow-[0_2px_8px_rgba(0,0,0,0.02)]">
