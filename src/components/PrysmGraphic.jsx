@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import prysmIcon from "../assets/icons/prysm-icon-dark.svg";
+import prysmIcon from "../assets/icons/prysm-icon-light.svg";
 
 /*
   PrysmGraphic v5 — SaaS-grade integration diagram
@@ -137,25 +137,23 @@ function DesktopGraphic() {
       <text x={emr.x + 22} y={emr.y + 55} fontSize="11.5" fill={BRAND.inkSoft}>Epic · Cerner</text>
       <text x={emr.x + 22} y={emr.y + 71} fontSize="11.5" fill={BRAND.inkSoft}>Encounter data</text>
 
-      {/* ---- Prysm hub: gradient ring → dark tile → white logo plate ---- */}
+      {/* ---- Prysm hub: gradient ring → dark tile ---- */}
       <g filter="url(#pg5-shadow-lg)">
         <rect x={hub.x - 3} y={hub.y - 3} width={hub.w + 6} height={hub.h + 6} rx="27" fill="url(#pg5-hubring)" />
         <rect x={hub.x} y={hub.y} width={hub.w} height={hub.h} rx="24" fill={BRAND.purpleDeep} />
       </g>
-      {/* white plate so the dark wordmark always reads */}
-      <rect x={hub.x + 20} y={hub.y + 26} width={hub.w - 40} height="52" rx="12" fill="#ffffff" />
       <image
         href={prysmIcon}
-        x={hub.x + 30}
-        y={hub.y + 36}
-        width={hub.w - 60}
-        height="32"
+        x={hub.x + 24}
+        y={hub.y + 32}
+        width={hub.w - 48}
+        height="38"
         preserveAspectRatio="xMidYMid meet"
       />
-      <text x={hub.x + hub.w / 2} y={hub.y + 108} fontSize="10.5" fontWeight="500" fill="#b9b7dd" textAnchor="middle">
+      <text x={hub.x + hub.w / 2} y={hub.y + 104} fontSize="11" fontWeight="500" fill="#e0dfff" textAnchor="middle">
         Built natively
       </text>
-      <text x={hub.x + hub.w / 2} y={hub.y + 124} fontSize="10.5" fontWeight="500" fill="#b9b7dd" textAnchor="middle">
+      <text x={hub.x + hub.w / 2} y={hub.y + 120} fontSize="11" fontWeight="500" fill="#e0dfff" textAnchor="middle">
         on Salesforce
       </text>
 
@@ -230,11 +228,9 @@ function MobileGraphic() {
           boxShadow: "0 12px 28px -12px rgba(35,32,79,0.4)",
         }}
       >
-        <div style={{ background: BRAND.purpleDeep, borderRadius: 19, padding: "20px 18px", textAlign: "center" }}>
-          <div style={{ background: "#fff", borderRadius: 12, padding: "10px 14px", display: "inline-block" }}>
-            <img src={prysmIcon} alt="Prysm" style={{ height: 26, display: "block" }} />
-          </div>
-          <div style={{ fontSize: 11.5, color: "#b9b7dd", fontWeight: 500, marginTop: 10 }}>
+        <div style={{ background: BRAND.purpleDeep, borderRadius: 19, padding: "24px 18px", textAlign: "center" }}>
+          <img src={prysmIcon} alt="Prysm" style={{ height: 34, display: "inline-block", marginBottom: "8px" }} />
+          <div style={{ fontSize: 12, color: "#e0dfff", fontWeight: 500, marginTop: 10 }}>
             Built natively on Salesforce
           </div>
         </div>
