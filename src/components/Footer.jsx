@@ -1,5 +1,6 @@
 import { Logo } from '../utils/Icons'
 import { Link } from 'react-router-dom'
+import prysmLogoLight from '../assets/icons/prysm-icon-light.svg'
 
 export const Footer = () => {
   return (
@@ -9,7 +10,13 @@ export const Footer = () => {
           {/* Brand Col */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-6 text-white">
-              <Logo />
+              <div className="overflow-hidden w-6 h-6 flex items-center justify-start">
+                  <img src={prysmLogoLight} alt="Prysm Icon" className="h-6 w-auto max-w-none object-left" />
+              </div>
+              <div className="flex flex-col">
+                  <span className="text-xl font-bold leading-none">Prysm</span>
+                  <span className="text-[11px] font-medium text-slate-400 leading-none mt-0.5 tracking-wide">by Actionable Insight</span>
+              </div>
             </div>
             <p className="text-slate-300 text-sm max-w-sm leading-relaxed">
               Actionable Insight builds the data engine for modern healthcare philanthropy.

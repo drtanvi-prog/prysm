@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Logo, LogoIcon } from './utils/Icons'
-
+import prysmLogo from './assets/icons/prysm-icon-dark.svg'
 export const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
     const location = useLocation()
@@ -20,7 +20,9 @@ export const Header = () => {
                 {/* Logo Section */}
                 <div className="flex-shrink-0 flex items-center">
                     <Link to="/" className="flex items-center gap-2" aria-label="Prysm Home">
-                        <LogoIcon className="w-6 h-6" />
+                        <div className="overflow-hidden w-6 h-6 flex items-center justify-start">
+                            <img src={prysmLogo} alt="Prysm Icon" className="h-6 w-auto max-w-none object-left" />
+                        </div>
                         <div className="flex flex-col">
                             <span className="text-lg font-bold text-ink leading-none">Prysm</span>
                             <span className="text-[10px] font-medium text-slate-500 leading-none mt-0.5">by Actionable Insight</span>

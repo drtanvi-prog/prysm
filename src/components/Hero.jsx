@@ -7,7 +7,7 @@ import prysmIcon from '../assets/icons/prysm-icon-dark.svg';
 
 export const Hero = () => {
   return (
-    <div className="relative pt-12 pb-16 sm:pt-24 sm:pb-24 lg:pt-32 lg:pb-32 overflow-hidden bg-white">
+    <div className="relative pt-12 pb-8 sm:pt-24 sm:pb-12 lg:pt-32 lg:pb-12 overflow-hidden bg-white">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 w-full">
 
         {/* Headings & Actions */}
