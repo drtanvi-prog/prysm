@@ -31,22 +31,28 @@ export const Header = () => {
                 </div>
 
                 {/* Desktop Navigation */}
-                <ul className="hidden md:flex gap-10">
+                <ul className="hidden md:flex gap-2">
                     {navLinks.map((link) => {
                         const isActive = location.pathname.startsWith(link.href)
                         return (
-                        <li key={link.title}>
-                            <Link
-                                to={link.href}
-                                className={`relative text-[15px] font-medium transition-colors pb-1 ${
-                                    isActive ? "text-ink" : "text-slate-500 hover:text-ink"
-                                }`}
-                            >
-                                {link.title}
-                                <span className={`absolute left-0 -bottom-0.5 h-[2px] w-full bg-accent transition-opacity ${isActive ? "opacity-100" : "opacity-0"}`}></span>
-                            </Link>
-                        </li>
-                    )})}
+                            <li key={link.title}>
+                                <Link
+                                    to={link.href}
+                                    className={`group relative inline-block px-4 py-2 text-[15px] font-medium transition-colors duration-200 ${isActive ? "text-ink" : "text-slate-500 hover:text-ink"
+                                        }`}
+                                >
+                                    {link.title}
+                                    {/* centered spectrum underline: grows from the middle */}
+                                    <span
+                                        className={`pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-0.5 h-[2px] rounded-full bg-gradient-to-r from-[#0e9a8f] via-[#4f56c9] to-[#c23d8f] transition-all duration-300 ease-out ${isActive
+                                                ? "w-5 opacity-100"
+                                                : "w-0 opacity-0 group-hover:w-5 group-hover:opacity-60"
+                                            }`}
+                                    />
+                                </Link>
+                            </li>
+                        )
+                    })}
                 </ul>
 
                 {/* Right Side Actions */}
@@ -87,17 +93,17 @@ export const Header = () => {
                         {navLinks.map((link) => {
                             const isActive = location.pathname.startsWith(link.href)
                             return (
-                            <Link
-                                key={link.title}
-                                to={link.href}
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                                    isActive ? "text-ink bg-accent-soft" : "text-slate-500 hover:text-ink hover:bg-slate-50"
-                                }`}
-                            >
-                                {link.title}
-                            </Link>
-                        )})}
+                                <Link
+                                    key={link.title}
+                                    to={link.href}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive ? "text-ink bg-accent-soft" : "text-slate-500 hover:text-ink hover:bg-slate-50"
+                                        }`}
+                                >
+                                    {link.title}
+                                </Link>
+                            )
+                        })}
                         <div className="pt-4 pb-2 px-3">
                             <Link
                                 to="/contact"

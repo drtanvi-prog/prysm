@@ -21,16 +21,13 @@ function AppContent() {
 
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Apple-like smooth inertia
-      direction: 'vertical',
-      gestureDirection: 'vertical',
-      smooth: true,
-      mouseMultiplier: 1,
-      smoothTouch: false,
+      lerp: 0.08, // 0.08 gives that premium, buttery-smooth momentum feeling
+      smoothWheel: true,
+      wheelMultiplier: 1.1, // Slightly faster wheel response
       touchMultiplier: 2,
-      infinite: false,
     })
+
+    window.lenis = lenis
 
     function raf(time) {
       lenis.raf(time)
@@ -41,6 +38,7 @@ function AppContent() {
 
     return () => {
       lenis.destroy()
+      delete window.lenis
     }
   }, [])
 

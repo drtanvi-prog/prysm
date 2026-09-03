@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import prysmIcon from "../assets/icons/prysm-icon-light.svg";
 
 /*
-  PrysmGraphic v5 — SaaS-grade integration diagram
+  PrysmGraphic v5 - SaaS-grade integration diagram
   (Stripe/Linear-style: dot-grid canvas, soft-shadow cards, gradient-ringed hub)
 
   Bug fixes vs v4:
   - All beam gradients use gradientUnits="userSpaceOnUse".
-    (objectBoundingBox gradients silently fail on horizontal paths — that's why
+    (objectBoundingBox gradients silently fail on horizontal paths - that's why
     the incoming and middle beams disappeared in the live render.)
   - Dark wordmark now sits on a white plate inside the hub, so it's always legible.
-  - Chip positions and beam endpoints share the same Y constants — always aligned.
+  - Chip positions and beam endpoints share the same Y constants - always aligned.
 */
 
 const BRAND = {
@@ -83,7 +83,7 @@ function DesktopGraphic() {
           <feDropShadow dx="0" dy="10" stdDeviation="16" floodColor={BRAND.purpleDeep} floodOpacity="0.22" />
         </filter>
 
-        {/* userSpaceOnUse gradients — immune to the zero-height bbox bug */}
+        {/* userSpaceOnUse gradients - immune to the zero-height bbox bug */}
         <linearGradient id="pg5-in" gradientUnits="userSpaceOnUse" x1={emr.x + emr.w} y1="0" x2={hub.x} y2="0">
           <stop offset="0" stopColor={BRAND.purple} stopOpacity="0.25" />
           <stop offset="1" stopColor={BRAND.purple} />

@@ -10,7 +10,7 @@ export const Hero = () => {
     <div className="relative pt-12 pb-8 sm:pt-24 sm:pb-12 lg:pt-32 lg:pb-12 overflow-hidden bg-white">
 
       {/* ---------- Background: refracted light (the Prysm signature) ----------
-          Three translucent beams — teal, purple, magenta — fan out from the
+          Three translucent beams - teal, purple, magenta - fan out from the
           top-right corner like light leaving a prism. Static, geometric,
           fading to nothing before the headline so text stays on clean white. */}
       <div className="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
@@ -77,44 +77,72 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Signature visual: EMR -> Prysm -> CRM bridge */}
-        <div className="relative mt-16 sm:mt-20 lg:mt-24 max-w-4xl mx-auto">
-          <div className="relative rounded-xl bg-white border border-slate-200/60 shadow-[0_4px_24px_-8px_rgba(24,22,51,0.08)] pt-6 pb-5 px-4 sm:p-8 lg:p-10 transition-colors duration-300">
-            <div className="flex flex-row items-center justify-between gap-1 sm:gap-2">
-              <div className="flex-1 text-center">
-                <div className="w-10 h-10 sm:w-14 sm:h-14 mx-auto rounded-xl bg-white border border-slate-200/80 flex items-center justify-center mb-2 shadow-[0_2px_8px_rgba(0,0,0,0.02)]">
-                  <svg className="w-4 h-4 sm:w-6 sm:h-6 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        {/* Signature visual: EMR -> Prysm -> CRM bridge (redesigned) */}
+        <div className="relative mt-16 sm:mt-20 lg:mt-24 max-w-3xl mx-auto">
+          <div className="relative rounded-2xl bg-white border border-slate-200/70 shadow-[0_8px_32px_-12px_rgba(24,22,51,0.12)] px-2 py-6 xs:px-5 xs:py-7 sm:px-10 sm:py-9 overflow-hidden">
+
+            {/* faint tinted wash inside the card so it isn't a flat white void */}
+            <div
+              className="absolute inset-0 pointer-events-none"
+              aria-hidden="true"
+              style={{
+                background:
+                  'radial-gradient(ellipse 60% 80% at 50% 50%, rgba(79,86,201,0.045) 0%, transparent 70%)',
+              }}
+            />
+
+            <div className="relative flex flex-row items-start justify-between gap-2 sm:gap-4 pt-2">
+
+              {/* EMR node */}
+              <div className="flex flex-col items-center text-center shrink-0">
+                <div className="w-10 h-10 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-b from-white to-slate-50 border border-slate-200 flex items-center justify-center mb-2.5 shadow-[0_2px_10px_rgba(24,22,51,0.06)]">
+                  <svg className="w-4 h-4 sm:w-7 sm:h-7 text-[#4f56c9]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                   </svg>
                 </div>
-                <div className="text-xs sm:text-sm font-bold text-ink whitespace-nowrap">EMR</div>
-                <div className="text-[9px] sm:text-xs text-slate-500 mt-0.5 leading-tight hidden xs:block whitespace-nowrap">Clinical record</div>
+                <div className="text-[10px] sm:text-sm font-bold text-ink whitespace-nowrap">EMR</div>
+                <div className="text-[9px] sm:text-[11px] text-slate-500 mt-0.5 leading-[1.2] sm:whitespace-nowrap hidden xs:block">Epic ·<br className="sm:hidden" /> Cerner</div>
               </div>
 
-              <div className="flex items-center justify-center flex-1 relative min-w-[20px] sm:min-w-[40px] px-1 sm:px-2">
-                <div className="w-full h-px bg-slate-200"></div>
-                <div className="absolute w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent"></div>
+              {/* connector: EMR -> Prysm (animated flowing dashes) */}
+              <div className="flex-1 flex items-center min-w-[24px] sm:min-w-[64px] mt-4 sm:mt-8" aria-hidden="true">
+                <svg className="w-full h-3 overflow-visible" viewBox="0 0 100 12" preserveAspectRatio="none">
+                  <line x1="0" y1="6" x2="100" y2="6" stroke="#e2e1ee" strokeWidth="2" vectorEffect="non-scaling-stroke" />
+                  <line x1="0" y1="6" x2="100" y2="6" stroke="#4f56c9" strokeWidth="2" strokeLinecap="round" strokeDasharray="6 10" vectorEffect="non-scaling-stroke">
+                    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="1.2s" repeatCount="indefinite" />
+                  </line>
+                </svg>
               </div>
 
-              <div className="flex-1 text-center flex flex-col items-center justify-center">
-                <div className="h-10 sm:h-16 flex items-center justify-center">
-                  <img src={prysmIcon} alt="Prysm" className="h-5 sm:h-9 w-auto object-contain" />
+              {/* Prysm node - the hero of the card */}
+              <div className="flex flex-col items-center text-center shrink-0">
+                <div className="rounded-2xl p-[2px] bg-gradient-to-br from-[#0e9a8f] via-[#4f56c9] to-[#c23d8f] shadow-[0_10px_28px_-10px_rgba(79,86,201,0.45)] mb-2.5">
+                  <div className="rounded-[14px] bg-white px-3 py-2 sm:px-6 sm:py-4 flex items-center justify-center">
+                    <img src={prysmIcon} alt="Prysm" className="h-5 sm:h-9 w-auto object-contain" />
+                  </div>
                 </div>
+                <div className="text-[9px] sm:text-[11px] text-slate-500 leading-[1.2] sm:whitespace-nowrap mt-1 sm:mt-0">Built natively<br className="sm:hidden" /> on Salesforce</div>
               </div>
 
-              <div className="flex items-center justify-center flex-1 relative min-w-[20px] sm:min-w-[40px] px-1 sm:px-2">
-                <div className="w-full h-px bg-slate-200"></div>
-                <div className="absolute w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-accent"></div>
+              {/* connector: Prysm -> CRM */}
+              <div className="flex-1 flex items-center min-w-[24px] sm:min-w-[64px] mt-4 sm:mt-8" aria-hidden="true">
+                <svg className="w-full h-3 overflow-visible" viewBox="0 0 100 12" preserveAspectRatio="none">
+                  <line x1="0" y1="6" x2="100" y2="6" stroke="#e2e1ee" strokeWidth="2" vectorEffect="non-scaling-stroke" />
+                  <line x1="0" y1="6" x2="100" y2="6" stroke="#c23d8f" strokeWidth="2" strokeLinecap="round" strokeDasharray="6 10" vectorEffect="non-scaling-stroke">
+                    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="1.2s" begin="0.6s" repeatCount="indefinite" />
+                  </line>
+                </svg>
               </div>
 
-              <div className="flex-1 text-center">
-                <div className="w-10 h-10 sm:w-14 sm:h-14 mx-auto rounded-xl bg-white border border-slate-200/80 flex items-center justify-center mb-2 shadow-[0_2px_8px_rgba(0,0,0,0.02)]">
-                  <svg className="w-4 h-4 sm:w-6 sm:h-6 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              {/* Donor CRM node */}
+              <div className="flex flex-col items-center text-center shrink-0">
+                <div className="w-10 h-10 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-b from-white to-slate-50 border border-slate-200 flex items-center justify-center mb-2.5 shadow-[0_2px_10px_rgba(24,22,51,0.06)]">
+                  <svg className="w-4 h-4 sm:w-7 sm:h-7 text-[#c23d8f]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </div>
-                <div className="text-xs sm:text-sm font-bold text-ink whitespace-nowrap">Donor CRM</div>
-                <div className="text-[9px] sm:text-xs text-slate-500 mt-0.5 leading-tight hidden xs:block whitespace-nowrap">System of record</div>
+                <div className="text-[10px] sm:text-sm font-bold text-ink whitespace-nowrap">Donor CRM</div>
+                <div className="text-[9px] sm:text-[11px] text-slate-500 mt-0.5 leading-[1.2] sm:whitespace-nowrap hidden xs:block">System of<br className="sm:hidden" /> record</div>
               </div>
             </div>
           </div>
