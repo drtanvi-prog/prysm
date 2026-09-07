@@ -35,10 +35,10 @@ export const PlatformPipeline = () => {
             <span className="hairline"></span>
             <span className="eyebrow">The Sustainable Pipeline</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6 tracking-tight leading-tight">
             Every constituent, every signal - into one qualified pipeline.
           </h2>
-          <p className="text-lg text-slate-500 leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-500 leading-relaxed">
             Solicitation-ready prospects, returned to the donor CRM you already run.
           </p>
         </div>

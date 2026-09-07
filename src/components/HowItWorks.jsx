@@ -51,10 +51,10 @@ export const HowItWorks = () => {
             <span className="eyebrow text-accent">The Prysm Difference</span>
             <span className="hairline"></span>
           </FadeUp>
-          <FadeUp delay={0.2} as="h2" className="text-3xl sm:text-4xl md:text-5xl font-bold text-ink mb-6 tracking-tight">
+          <FadeUp delay={0.2} as="h2" className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6 tracking-tight leading-tight">
             Bridging the gap between data and relationships.
           </FadeUp>
-          <FadeUp delay={0.3} className="text-base sm:text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+          <FadeUp delay={0.3} className="text-base sm:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
             Grateful patient fundraising is a five-step loop. Most systems cover a step or two. Prysm runs the whole loop.
           </FadeUp>
         </div>
