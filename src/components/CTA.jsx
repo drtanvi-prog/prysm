@@ -17,11 +17,11 @@ export const CTA = () => {
             <span className="hairline"></span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-ink tracking-tight mb-4 sm:mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink tracking-tight mb-6 leading-tight">
             See what's possible.
           </h2>
 
-          <p className="text-[15px] sm:text-base md:text-lg text-slate-500 leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-10 px-2 sm:px-0">
+          <p className="text-base sm:text-lg text-slate-500 leading-relaxed max-w-2xl mx-auto mb-10 px-2 sm:px-0">
             Learn how healthcare foundations use Prysm to bridge the gap between clinical encounters and philanthropic impact - without replacing their existing EMR or CRM.
           </p>
 

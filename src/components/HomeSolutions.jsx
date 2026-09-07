@@ -8,19 +8,19 @@ export const HomeSolutions = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* Left Side Info */}
-          <div>
-            <div className="flex items-center gap-3 mb-5">
+          <div className="text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start gap-3 mb-5">
               <span className="hairline"></span>
               <span className="eyebrow">The Solution</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-ink mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ink mb-6 tracking-tight leading-tight">
               The operational bridge between clinical care and philanthropy.
             </h2>
-            <p className="text-lg text-slate-500 mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-500 mb-8 leading-relaxed">
               Prysm is an enterprise application built natively on Salesforce that bridges the gap between your EMR and your Donor CRM. It identifies grateful patients, engages clinicians, qualifies prospects, and hands them off to your fundraisers with full context.
             </p>
 
-            <div className="space-y-4 mb-10">
+            <div className="space-y-4 mb-10 max-w-fit mx-auto lg:mx-0 text-left">
               {[
                 "Native EMR integration (Epic, Cerner)",
                 "AI-driven prospect scoring and qualification",
@@ -37,7 +37,7 @@ export const HomeSolutions = () => {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link to="/platform" className="bg-ink hover:bg-ink-soft text-white px-6 py-3 rounded-full text-base font-medium transition-colors shadow-sm text-center">
                 Explore the Platform
               </Link>

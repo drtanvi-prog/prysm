@@ -12,22 +12,22 @@ const SPECTRUM = ['#0e9a8f', '#2f7ab8', '#4f56c9', '#8a4ab0', '#c23d8f']
 
 function LoopMeter({ covered, dark = false }) {
   return (
-    <div className="flex items-start gap-1.5 sm:gap-2" aria-hidden="true">
+    <div className="flex items-start gap-1 sm:gap-1.5" aria-hidden="true">
       {LOOP_STEPS.map((step, i) => {
         const on = covered[i]
         return (
-          <div key={step} className="flex flex-col items-center gap-1.5 w-[52px] sm:w-[64px]">
+          <div key={step} className="flex flex-col items-center gap-2 w-[48px] sm:w-[60px]">
             <div
-              className="h-[5px] w-full rounded-full"
+              className="h-[6px] sm:h-[8px] w-full rounded-full"
               style={{
                 background: on
                   ? dark ? SPECTRUM[i] : '#94a3b8'
-                  : dark ? 'rgba(255,255,255,0.14)' : '#e8eaf0',
+                  : dark ? 'rgba(255,255,255,0.14)' : '#f1f3f7',
               }}
             />
             <span
-              className={`text-[9px] sm:text-[10px] font-medium leading-none whitespace-nowrap ${
-                on ? (dark ? 'text-white/90' : 'text-slate-500') : dark ? 'text-white/30' : 'text-slate-300'
+              className={`text-[9px] sm:text-[10px] font-semibold tracking-wide leading-none whitespace-nowrap ${
+                on ? (dark ? 'text-white' : 'text-slate-600') : dark ? 'text-white/30' : 'text-slate-300'
               }`}
             >
               {step}
@@ -71,10 +71,10 @@ export const HowItWorks = () => {
                   Surface prospects effectively - but can't manage the clinician partnership or track what happens after the hand-off.
                 </p>
               </div>
-              <div className="lg:flex-1 lg:flex lg:justify-end">
-                <div>
+              <div className="lg:flex-1 lg:flex lg:justify-end mt-4 lg:mt-0">
+                <div className="flex flex-col items-end">
                   <LoopMeter covered={[true, false, false, false, false]} />
-                  <div className="mt-2.5 text-[11px] font-semibold text-slate-400">Covers 1 of 5 steps</div>
+                  <div className="mt-3 text-[11px] font-semibold text-slate-400">Covers 1 of 5 steps</div>
                 </div>
               </div>
             </div>
@@ -87,10 +87,10 @@ export const HowItWorks = () => {
                   Hold donor data securely and manage relationships - but never report engagement impact back to the medical staff.
                 </p>
               </div>
-              <div className="lg:flex-1 lg:flex lg:justify-end">
-                <div>
+              <div className="lg:flex-1 lg:flex lg:justify-end mt-4 lg:mt-0">
+                <div className="flex flex-col items-end">
                   <LoopMeter covered={[false, false, true, true, false]} />
-                  <div className="mt-2.5 text-[11px] font-semibold text-slate-400">Covers 2 of 5 steps</div>
+                  <div className="mt-3 text-[11px] font-semibold text-slate-400">Covers 2 of 5 steps</div>
                 </div>
               </div>
             </div>
@@ -109,14 +109,14 @@ export const HowItWorks = () => {
                     Surfaces high-capacity clinical prospects, manages the clinician partnership, and reports impact back - the loop that earns the next referral.
                   </p>
                 </div>
-                <div className="lg:flex-1 lg:flex lg:justify-end">
-                  <div>
+                <div className="lg:flex-1 lg:flex lg:justify-end mt-4 lg:mt-0">
+                  <div className="flex flex-col items-end">
                     <LoopMeter covered={[true, true, true, true, true]} dark />
-                    <div className="mt-2.5 flex items-center gap-1.5">
-                      <svg className="w-3.5 h-3.5 text-[#3fd0c2]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <div className="mt-3 flex items-center gap-1.5">
+                      <svg className="w-4 h-4 text-[#3fd0c2]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
-                      <span className="text-[11px] font-semibold text-white">Runs all five - only Prysm closes the loop</span>
+                      <span className="text-[11px] font-bold tracking-wide text-white">Runs all five - only Prysm closes the loop</span>
                     </div>
                   </div>
                 </div>

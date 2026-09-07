@@ -18,11 +18,11 @@ export const TheOpportunity = () => {
           <FadeUp delay={0.1}>
             <span className="text-slate-400 uppercase tracking-widest text-xs font-bold block mb-4">The Challenges</span>
           </FadeUp>
-          <FadeUp delay={0.2} as="h2" className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink tracking-tight leading-[1.15] mb-6">
+          <FadeUp delay={0.2} as="h2" className="text-2xl sm:text-3xl md:text-4xl font-semibold text-ink tracking-tight leading-[1.15] mb-6">
             Prysm solves philanthropy's top five challenges.
           </FadeUp>
           <FadeUp delay={0.3} className="max-w-2xl mx-auto">
-            <p className="text-lg text-slate-500 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-500 leading-relaxed">
               <span className="text-accent font-bold">ONLY PRYSM</span> closes all five - turning the opportunity into qualified major gifts.
             </p>
           </FadeUp>
